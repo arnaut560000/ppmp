@@ -1,0 +1,3465 @@
+{
+  "source_path": "C:\\Users\\arnaut\\OneDrive\\Desktop\\PPMP.xlsx",
+  "source_sha256": "9f7b24c4bff0553020ca213f7f57719b4a658d63bfabafc107c27cfc5e726041",
+  "source_size_bytes": 4288904,
+  "inspection_date": "2026-10-08",
+  "method": "OOXML read only; stored values and formulas; no recalculation",
+  "sheets": [
+    {
+      "name": "Sheet1",
+      "title": "CONSOLIDATED PROJECT PROCUREMENT MANAGEMENT PLAN (PPMP) FOR FY 2027",
+      "dimension": "A1:QX2488",
+      "nonempty_row_count": 2482,
+      "candidate_item_rows": 2352,
+      "excluded_total_rows": [
+        {
+          "row": 115,
+          "label": "TOTAL (Office Supplies - A)"
+        },
+        {
+          "row": 554,
+          "label": "TOTAL (Office Supplies - B)"
+        },
+        {
+          "row": 555,
+          "label": "GRAND TOTAL - OFFICE SUPPLIES"
+        },
+        {
+          "row": 603,
+          "label": "TOTAL (Accountable Forms)"
+        },
+        {
+          "row": 633,
+          "label": "TOTAL (Non-Accountable Forms)"
+        },
+        {
+          "row": 646,
+          "label": "TOTAL (Animal/Zoological Supplies Expenses)"
+        },
+        {
+          "row": 1484,
+          "label": "TOTAL (Drugs and Medicines Expenses)"
+        },
+        {
+          "row": 1628,
+          "label": "TOTAL (Medical, Dental, and Laboratory Supplies)"
+        },
+        {
+          "row": 1648,
+          "label": "TOTAL (Fuel, Oil, and Lubricants)"
+        },
+        {
+          "row": 1714,
+          "label": "TOTAL (Agricultural and Marine Supplies Expenses)"
+        },
+        {
+          "row": 1723,
+          "label": "TOTAL (Texbooks and Instructional Materials)"
+        },
+        {
+          "row": 1767,
+          "label": "TOTAL (Other Supplies and Materials - A)"
+        },
+        {
+          "row": 2125,
+          "label": "TOTAL (Other Supplies and Materials - B)"
+        },
+        {
+          "row": 2126,
+          "label": "GRAND TOTAL - Other Supplies and Materials"
+        },
+        {
+          "row": 2141,
+          "label": "TOTAL (Other Supplies and Materials (semi-exp - A))"
+        },
+        {
+          "row": 2237,
+          "label": "TOTAL (Other Supplies and Materials (semi-exp - B))"
+        },
+        {
+          "row": 2239,
+          "label": "GRAND TOTAL - Other Supplies and Materials (semi-expendable)"
+        },
+        {
+          "row": 2278,
+          "label": "TOTAL (Representation Expenses)"
+        },
+        {
+          "row": 2292,
+          "label": "TOTAL (Repair and Maintenance (OE)"
+        },
+        {
+          "row": 2299,
+          "label": "TOTAL (Repair and Maintenance (ICT Equipment)"
+        },
+        {
+          "row": 2305,
+          "label": "TOTAL (Repair and Maintenance F/F)"
+        },
+        {
+          "row": 2384,
+          "label": "TOTAL (Repair and Maintenance - MV)"
+        },
+        {
+          "row": 2389,
+          "label": "TOTAL (Repair and Maintenance - CHE)"
+        },
+        {
+          "row": 2395,
+          "label": "TOTAL (Repair and Maintenance - Building and Other Structure)"
+        },
+        {
+          "row": 2416,
+          "label": "TOTAL (Advertising Expenses)"
+        },
+        {
+          "row": 2452,
+          "label": "TOTAL (Printing and Publication Expenses)"
+        },
+        {
+          "row": 2459,
+          "label": "TOTAL (Rent Expenses)"
+        },
+        {
+          "row": 2480,
+          "label": "TOTAL (Other MOE - Subscription Expenses)"
+        },
+        {
+          "row": 2487,
+          "label": "TOTAL (Other Professional Services)"
+        }
+      ],
+      "reporting_groups": 42,
+      "formula_cell_count": 0,
+      "formula_examples": [],
+      "error_cells": [
+        {
+          "cell": "CL258",
+          "value": "#REF!"
+        },
+        {
+          "cell": "CM258",
+          "value": "#REF!"
+        },
+        {
+          "cell": "CN258",
+          "value": "#REF!"
+        },
+        {
+          "cell": "Y447",
+          "value": "#VALUE!"
+        },
+        {
+          "cell": "Y554",
+          "value": "#VALUE!"
+        },
+        {
+          "cell": "CL554",
+          "value": "#REF!"
+        },
+        {
+          "cell": "CM554",
+          "value": "#REF!"
+        },
+        {
+          "cell": "CN554",
+          "value": "#REF!"
+        },
+        {
+          "cell": "Y555",
+          "value": "#VALUE!"
+        },
+        {
+          "cell": "CL555",
+          "value": "#REF!"
+        },
+        {
+          "cell": "CM555",
+          "value": "#REF!"
+        },
+        {
+          "cell": "CN555",
+          "value": "#REF!"
+        }
+      ],
+      "sheet_protection": null,
+      "data_validation_count": 0,
+      "category_counts": {
+        "Office Supplies - A": 106,
+        "Office Supplies - B": 433,
+        "Accountable Forms": 44,
+        "Non-Accountable Forms": 27,
+        "Animal/Zoological Supplies Expenses": 7,
+        "Drugs and Medicines Expenses": 831,
+        "Medical, Dental, and Laboratory Supplies": 139,
+        "Fuel, Oil, and Lubricants Expenses": 16,
+        "Agricultural and Marine Supplies Expenses": 62,
+        "Other Supplies and Materials Expenses - A": 41,
+        "Other Supplies and Materials Expenses - B": 351,
+        "Representation Expenses": 37,
+        "Other Supplies and Materials (semi-exp) - A": 10,
+        "Other Supplies and Materials (semi-exp) - B": 88,
+        "Repairs and Maintenance (Office Equipment)": 9,
+        "Repairs and Maintenance (ICT Equipment)": 4,
+        "Repairs and Maintenance (Furnitures and Fixtures)": 2,
+        "Repairs and Maintenance (Transpo-Motor Vehicle)": 76,
+        "Repairs and Maintenance (CHE)": 1,
+        "Repairs and Maintenance (Building and Other Structures)": 2,
+        "Advertising Expenses": 18,
+        "Printing and Publication Expenses": 32,
+        "Rent Expenses": 3,
+        "Other MOE (Subscription Expenses)": 13
+      },
+      "unit_counts": {
+        "roll": 9,
+        "unit": 24,
+        "bundle": 5,
+        "tube": 1,
+        "box": 30,
+        "pack": 30,
+        "piece": 66,
+        "set": 15,
+        "bottle": 13,
+        "cart": 4,
+        "pad": 4,
+        "ream": 4,
+        "book": 2,
+        "pair": 1,
+        "PIECE": 461,
+        "BOX": 103,
+        "REAM": 54,
+        "PADS": 7,
+        "BOTTLE": 262,
+        "PACK": 103,
+        "CART": 73,
+        "SET": 93,
+        "PAD": 29,
+        "TUBE": 13,
+        "ROLL": 20,
+        "CARTRIDGE": 8,
+        "METERS": 1,
+        "LOT": 23,
+        "UNIT": 23,
+        "BOOK": 1,
+        "BOOKLET": 1,
+        "VIAL": 4,
+        "TABLET": 264,
+        "SACHET": 6,
+        "AMPULE": 217,
+        "BAG": 25,
+        "DROP": 28,
+        "CAPSULE": 59,
+        "SYRINGE": 18,
+        "CREAM": 13,
+        "OINTMENT": 9,
+        "INHALER": 13,
+        "LIQUID": 14,
+        "0": 1,
+        "POWDER": 4,
+        "GALLON": 9,
+        "pc": 1,
+        "CANNISTER": 1,
+        "POUCH": 2,
+        "KILO": 38,
+        "KIT": 2,
+        "PAIR": 9,
+        "PC": 6,
+        "LITER": 6,
+        "PAIL": 2,
+        "CAN": 26,
+        "SACK": 12,
+        "HEADS": 2,
+        "BAGS": 1,
+        "KG": 4,
+        "gallon": 1,
+        "can": 6,
+        "plastic container": 1,
+        "pouch": 1,
+        "kilo": 1,
+        "roll/pack": 3,
+        "Unit": 5,
+        "PLASTIC CONTAINER": 1,
+        "TRAY": 1,
+        "PAIRS": 4,
+        "DRUM": 1,
+        "TANK": 2,
+        "PAX": 1,
+        "": 9,
+        "yard": 1,
+        "CUP": 1,
+        "pairs": 1,
+        "YARD": 1,
+        "SERVING": 2,
+        "PIEXE": 1,
+        "Basket": 1,
+        "CUBIC METER(BIN/TRUCK)": 1,
+        "kl": 1,
+        "DOZEN": 1,
+        "PACKS": 2,
+        "PCS": 1,
+        "LITERS": 1,
+        "lot": 2,
+        "PAGE/DAY": 10,
+        "sq.ft": 1,
+        "SQ.FT.": 6,
+        "Sq.fT.": 2
+      },
+      "candidate_missing_unit_rows": [
+        1886,
+        1887,
+        1888,
+        1916,
+        2073,
+        2107,
+        2108,
+        2379,
+        2408
+      ],
+      "candidate_missing_or_nonnumeric_cost_rows": [
+        756,
+        885,
+        1367,
+        1396,
+        1580
+      ],
+      "duplicate_description_groups": [
+        {
+          "description": "CALCULATOR, Compact",
+          "rows": [
+            13,
+            14
+          ],
+          "units": [
+            "unit"
+          ],
+          "unit_costs": [
+            "283",
+            "299"
+          ]
+        },
+        {
+          "description": "CARBON FILM, Legal size",
+          "rows": [
+            15,
+            489
+          ],
+          "units": [
+            "BOX",
+            "box"
+          ],
+          "unit_costs": [
+            "423"
+          ]
+        },
+        {
+          "description": "CLEARBOOK, A4 size",
+          "rows": [
+            18,
+            137
+          ],
+          "units": [
+            "PIECE",
+            "piece"
+          ],
+          "unit_costs": [
+            "43"
+          ]
+        },
+        {
+          "description": "CLEARBOOK, Legal size",
+          "rows": [
+            19,
+            135,
+            136
+          ],
+          "units": [
+            "PIECE",
+            "piece"
+          ],
+          "unit_costs": [
+            "44",
+            "80"
+          ]
+        },
+        {
+          "description": "CORRECTION TAPE",
+          "rows": [
+            27,
+            147
+          ],
+          "units": [
+            "PIECE",
+            "piece"
+          ],
+          "unit_costs": [
+            "17",
+            "87"
+          ]
+        },
+        {
+          "description": "INK, for stamp pad",
+          "rows": [
+            58,
+            496
+          ],
+          "units": [
+            "bottle"
+          ],
+          "unit_costs": [
+            "35"
+          ]
+        },
+        {
+          "description": "MARKER, Whiteboard, Black",
+          "rows": [
+            63,
+            599
+          ],
+          "units": [
+            "PIECE",
+            "piece"
+          ],
+          "unit_costs": [
+            "12"
+          ]
+        },
+        {
+          "description": "MARKER, Whiteboard, Blue",
+          "rows": [
+            64,
+            601
+          ],
+          "units": [
+            "PIECE",
+            "piece"
+          ],
+          "unit_costs": [
+            "12"
+          ]
+        },
+        {
+          "description": "MARKER, Whiteboard, Red",
+          "rows": [
+            65,
+            600
+          ],
+          "units": [
+            "PIECE",
+            "piece"
+          ],
+          "unit_costs": [
+            "12"
+          ]
+        },
+        {
+          "description": "NOTEPAD, stick-on, 50mm x 76mm",
+          "rows": [
+            66,
+            289
+          ],
+          "units": [
+            "PIECE",
+            "pad"
+          ],
+          "unit_costs": [
+            "45"
+          ]
+        },
+        {
+          "description": "CORRECTION TAPE, 5mm x 30m, 5pcs/box",
+          "rows": [
+            113,
+            114,
+            528
+          ],
+          "units": [
+            "BOX",
+            "box"
+          ],
+          "unit_costs": [
+            "165",
+            "180"
+          ]
+        },
+        {
+          "description": "BINDER CLIP , FOLDBACK, 1.25 inches",
+          "rows": [
+            120,
+            121
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "45",
+            "50"
+          ]
+        },
+        {
+          "description": "CALCULATOR , 14-16 Digits",
+          "rows": [
+            127,
+            128
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "1265",
+            "207"
+          ]
+        },
+        {
+          "description": "DATER STAMP, SELF INK DATER, S-402, RECEIVED",
+          "rows": [
+            154,
+            155
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "591",
+            "645"
+          ]
+        },
+        {
+          "description": "FASTENER , PLASTIC COATED, 70mm between prongs",
+          "rows": [
+            162,
+            163
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "62",
+            "68"
+          ]
+        },
+        {
+          "description": "FASTENER , METAL, RUSH & SHARP FREE, 70mm between prongs",
+          "rows": [
+            164,
+            165
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "62",
+            "67"
+          ]
+        },
+        {
+          "description": "FILE HOLDER , MAGFILE DOUBLE, BLACK, LEGAL",
+          "rows": [
+            166,
+            167
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "308",
+            "336"
+          ]
+        },
+        {
+          "description": "FILE TRAY , METAL MESH DESK ORGANIZER, LEGAL, 3 LAYER",
+          "rows": [
+            172,
+            173
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "1099",
+            "838"
+          ]
+        },
+        {
+          "description": "FOLDER, 1811D-1400 ARCHFILE, #556 7CM, BLUE, LEGAL SIZE",
+          "rows": [
+            182,
+            186
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "110"
+          ]
+        },
+        {
+          "description": "FOLDER, 1811D-1400 ARCHFILE, #556 7CM, BLUE, A4 SIZE",
+          "rows": [
+            187,
+            191
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "113"
+          ]
+        },
+        {
+          "description": "INK CART , EPSON (003), Black",
+          "rows": [
+            229,
+            233
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "326",
+            "330"
+          ]
+        },
+        {
+          "description": "INK CART , EPSON (003), Cyan",
+          "rows": [
+            230,
+            234
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "334",
+            "339"
+          ]
+        },
+        {
+          "description": "INK CART , EPSON (003), Magenta",
+          "rows": [
+            231,
+            235
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "334",
+            "339"
+          ]
+        },
+        {
+          "description": "INK CART , EPSON (003), Yellow",
+          "rows": [
+            232,
+            236
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "334",
+            "339"
+          ]
+        },
+        {
+          "description": "INK CART , EPSON (664), Black",
+          "rows": [
+            237,
+            238,
+            242,
+            492
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "344",
+            "356",
+            "518"
+          ]
+        },
+        {
+          "description": "INK CART , EPSON (664), Cyan",
+          "rows": [
+            239,
+            243,
+            493
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "356",
+            "518"
+          ]
+        },
+        {
+          "description": "INK CART , EPSON (664), Magenta",
+          "rows": [
+            240,
+            244,
+            494
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "356",
+            "518"
+          ]
+        },
+        {
+          "description": "INK CART , EPSON (664), Yellow",
+          "rows": [
+            241,
+            245,
+            495
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "356",
+            "518"
+          ]
+        },
+        {
+          "description": "MARKER PEN , PERMANENT, BROAD POINT, BLACK",
+          "rows": [
+            256,
+            259
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "45",
+            "67"
+          ]
+        },
+        {
+          "description": "MARKER PEN , WHITEBOARD MARKER, FINE POINT, BLACK",
+          "rows": [
+            270,
+            272
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "58",
+            "67"
+          ]
+        },
+        {
+          "description": "MARKER PEN , WHITEBOARD MARKER, FINE POINT, BLUE",
+          "rows": [
+            271,
+            274
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "58",
+            "67"
+          ]
+        },
+        {
+          "description": "MARKER PEN , WHITEBOARD MARKER, FINE POINT, RED",
+          "rows": [
+            273,
+            275
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "58",
+            "67"
+          ]
+        },
+        {
+          "description": "NOTEBOOK , SPIRAL NOTEBOOK, 5.5\" X 7.5\", 80s",
+          "rows": [
+            287,
+            288
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "34",
+            "38"
+          ]
+        },
+        {
+          "description": "NOTEPAD , STICK ON, 3X3, 100 SHEET",
+          "rows": [
+            291,
+            292
+          ],
+          "units": [
+            "PAD"
+          ],
+          "unit_costs": [
+            "59",
+            "65"
+          ]
+        },
+        {
+          "description": "PAPER , A4, 210 X 297mm (8.3\" x 11.7\"), 70 gsm, 500 sheets",
+          "rows": [
+            303,
+            304
+          ],
+          "units": [
+            "REAM"
+          ],
+          "unit_costs": [
+            "216",
+            "267"
+          ]
+        },
+        {
+          "description": "PAPER , A4, 210 X 297mm (8.3\" x 11.7\"), 100 gsm, 500 sheets",
+          "rows": [
+            306,
+            307
+          ],
+          "units": [
+            "REAM"
+          ],
+          "unit_costs": [
+            "446",
+            "486"
+          ]
+        },
+        {
+          "description": "PAPER , LEGAL, 8.5\" X 14\", 70 gsm, 500 gsm",
+          "rows": [
+            313,
+            315
+          ],
+          "units": [
+            "REAM"
+          ],
+          "unit_costs": [
+            "260",
+            "369"
+          ]
+        },
+        {
+          "description": "PAPER , FOLIO, 216 X 320mm (8.5\" x 13.5\"), 80 gsm, 500 sheets",
+          "rows": [
+            318,
+            319
+          ],
+          "units": [
+            "REAM"
+          ],
+          "unit_costs": [
+            "418",
+            "456"
+          ]
+        },
+        {
+          "description": "PAPER , LETTER, 216 x 279mm (8.5\" X 11\"),70 gsm, 500 sheets",
+          "rows": [
+            321,
+            322
+          ],
+          "units": [
+            "REAM"
+          ],
+          "unit_costs": [
+            "228",
+            "249"
+          ]
+        },
+        {
+          "description": "PAPER , LETTER, 216 x 279mm (8.5\" X 11\"), 100 gsm, 500 sheets",
+          "rows": [
+            324,
+            325
+          ],
+          "units": [
+            "REAM"
+          ],
+          "unit_costs": [
+            "424",
+            "462"
+          ]
+        },
+        {
+          "description": "PAPER , SPECIAL, A4,100GSM",
+          "rows": [
+            330,
+            331
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "53",
+            "58"
+          ]
+        },
+        {
+          "description": "PAPER , YELLOW PAD, 80 LEAVES",
+          "rows": [
+            337,
+            338
+          ],
+          "units": [
+            "PADS"
+          ],
+          "unit_costs": [
+            "55",
+            "60"
+          ]
+        },
+        {
+          "description": "PAPER CLIP , NICKEL, 33mm, 100 pcs/box",
+          "rows": [
+            340,
+            341
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "19",
+            "24"
+          ]
+        },
+        {
+          "description": "PAPER CLIP , VINYL COATED, 33mm, 100 pcs/box",
+          "rows": [
+            342,
+            343
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "39",
+            "54"
+          ]
+        },
+        {
+          "description": "PEN , GEL PEN, BLACK, 0.5mm needle tip,12 pcs/box",
+          "rows": [
+            351,
+            354
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "77",
+            "84"
+          ]
+        },
+        {
+          "description": "PEN , GEL PEN, BLUE, 0.5mm needle tip, 12 pcs/box",
+          "rows": [
+            352,
+            355
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "77",
+            "84"
+          ]
+        },
+        {
+          "description": "PEN , GEL PEN, RED, 0.5mm needle tip, 12 pcs/box",
+          "rows": [
+            353,
+            356
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "77",
+            "84"
+          ]
+        },
+        {
+          "description": "PEN , BALLPOINT PEN, BLACK, 0.5mm, 12 pcs/box",
+          "rows": [
+            358,
+            361
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "77",
+            "84"
+          ]
+        },
+        {
+          "description": "PEN , BALLPOINT PEN, BLUE, 0.5mm, 12 pcs/box",
+          "rows": [
+            359,
+            362
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "77",
+            "84"
+          ]
+        },
+        {
+          "description": "PEN , BALLPOINT PEN, RED, 0.5mm, 12 pcs/box",
+          "rows": [
+            360,
+            363
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "77",
+            "84"
+          ]
+        },
+        {
+          "description": "PENCIL , lead, w/ eraser, wood cased, hardness: B (#1)",
+          "rows": [
+            378,
+            379
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "104",
+            "114"
+          ]
+        },
+        {
+          "description": "PENCIL , lead, w/ eraser, wood cased, hardness: H (#3)",
+          "rows": [
+            381,
+            382
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "116",
+            "126"
+          ]
+        },
+        {
+          "description": "PRINTER TONER, Kyocera, ECOSYS M8124, BLACK",
+          "rows": [
+            404,
+            408
+          ],
+          "units": [
+            "CARTRIDGE"
+          ],
+          "unit_costs": [
+            "6248",
+            "6816"
+          ]
+        },
+        {
+          "description": "PRINTER TONER, Kyocera, ECOSYS M8124, CYAN",
+          "rows": [
+            405,
+            409
+          ],
+          "units": [
+            "CARTRIDGE"
+          ],
+          "unit_costs": [
+            "10373",
+            "11316"
+          ]
+        },
+        {
+          "description": "PRINTER TONER, Kyocera, ECOSYS M8124, MAGENTA",
+          "rows": [
+            406,
+            410
+          ],
+          "units": [
+            "CARTRIDGE"
+          ],
+          "unit_costs": [
+            "10373",
+            "11316"
+          ]
+        },
+        {
+          "description": "PRINTER TONER, Kyocera, ECOSYS M8124, YELLOW",
+          "rows": [
+            407,
+            411
+          ],
+          "units": [
+            "CARTRIDGE"
+          ],
+          "unit_costs": [
+            "10373",
+            "11316"
+          ]
+        },
+        {
+          "description": "RECORD BOOK , 300 PAGES",
+          "rows": [
+            420,
+            422
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "101",
+            "111"
+          ]
+        },
+        {
+          "description": "RECORD BOOK , 500 PAGES",
+          "rows": [
+            421,
+            423
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "140",
+            "153"
+          ]
+        },
+        {
+          "description": "RULER , STAINLESS, WIDTH: 60mm",
+          "rows": [
+            431,
+            432
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "290",
+            "317"
+          ]
+        },
+        {
+          "description": "STAPLER , #35, W/ REMOVER, 30-SHEET CAPACITY, LOAD CAP: 105 STAPLES",
+          "rows": [
+            445,
+            446
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "666",
+            "671"
+          ]
+        },
+        {
+          "description": "STAPLE WIRE , STANDARD, (26/6),#35-5M, LEG LENGTH: 6mm (1/4\"),5000 PIECE",
+          "rows": [
+            452,
+            453
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "81",
+            "87"
+          ]
+        },
+        {
+          "description": "STICKER PAPER , A4 SIZE, MATTE, 10s",
+          "rows": [
+            457,
+            458
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "62",
+            "68"
+          ]
+        },
+        {
+          "description": "STICKER PAPER , A4 SIZE",
+          "rows": [
+            459,
+            460
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "62",
+            "68"
+          ]
+        },
+        {
+          "description": "STORAGE BOX , OFFICE STORAGE BOX WITH LID, BLUE",
+          "rows": [
+            461,
+            498
+          ],
+          "units": [
+            "CART",
+            "PIECE"
+          ],
+          "unit_costs": [
+            "358"
+          ]
+        },
+        {
+          "description": "SUBSIDIARY PURCHASE JOURNAL, 14 COLUMNS",
+          "rows": [
+            465,
+            466
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "39"
+          ]
+        },
+        {
+          "description": "TAPE , TRANSPARENT, SIZE: 18MM X 50M, STATIONERY TAPE",
+          "rows": [
+            468,
+            514
+          ],
+          "units": [
+            "ROLL"
+          ],
+          "unit_costs": [
+            "25",
+            "26"
+          ]
+        },
+        {
+          "description": "Ink Cart, Epson (008), black",
+          "rows": [
+            499,
+            516,
+            520,
+            524
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "1064",
+            "1150",
+            "836",
+            "930"
+          ]
+        },
+        {
+          "description": "Ink Cart, Epson (008), cyan",
+          "rows": [
+            500,
+            517,
+            521,
+            525
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "836",
+            "847",
+            "891",
+            "900"
+          ]
+        },
+        {
+          "description": "Ink Cart, Epson (008), Magenta",
+          "rows": [
+            501,
+            518,
+            522,
+            526
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "836",
+            "847",
+            "891",
+            "900"
+          ]
+        },
+        {
+          "description": "Ink Cart, Epson (008), Yellow",
+          "rows": [
+            502,
+            519,
+            523,
+            527
+          ],
+          "units": [
+            "CART"
+          ],
+          "unit_costs": [
+            "836",
+            "847",
+            "891",
+            "900"
+          ]
+        },
+        {
+          "description": "CANON, Gl71, PGBK, BLACK 135ML",
+          "rows": [
+            538,
+            542
+          ],
+          "units": [
+            "PIECE",
+            "bottle"
+          ],
+          "unit_costs": [
+            "145",
+            "570"
+          ]
+        },
+        {
+          "description": "Computer Mouse, A4Tech, g3-200NS 2.4G Hz 1200DPI Silent Click Wireless Mouse",
+          "rows": [
+            549,
+            2213
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "439"
+          ]
+        },
+        {
+          "description": "AF #51 PERSONALIZED OFFICIAL RECEIPT , CARBONIZED",
+          "rows": [
+            558,
+            559
+          ],
+          "units": [
+            "PAD"
+          ],
+          "unit_costs": [
+            "176",
+            "250"
+          ]
+        },
+        {
+          "description": "APPLICATION FOR MARRIAGE LICENSE , MF NO. 90, 8.5\" x 14\"",
+          "rows": [
+            566,
+            567
+          ],
+          "units": [
+            "PAD"
+          ],
+          "unit_costs": [
+            "385",
+            "420"
+          ]
+        },
+        {
+          "description": "CERTIFICATE OF DEATH , MF NO. 103, 8.5\" x 14\"",
+          "rows": [
+            577,
+            578
+          ],
+          "units": [
+            "PAD"
+          ],
+          "unit_costs": [
+            "385",
+            "420"
+          ]
+        },
+        {
+          "description": "CERTIFICATE OF LIVE BIRTH , MF NO. 102, 8.5\" x 14\"",
+          "rows": [
+            579,
+            580
+          ],
+          "units": [
+            "PAD"
+          ],
+          "unit_costs": [
+            "385",
+            "420"
+          ]
+        },
+        {
+          "description": "MARRIAGE CERTIFICATE , MF NO. 97, 8.5\" x 14\"",
+          "rows": [
+            585,
+            586
+          ],
+          "units": [
+            "PAD"
+          ],
+          "unit_costs": [
+            "385",
+            "420"
+          ]
+        },
+        {
+          "description": "REGISTER , BOOK OF DEATH, MUN. FORM # 27",
+          "rows": [
+            589,
+            591
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "715",
+            "780"
+          ]
+        },
+        {
+          "description": "REGISTER , BOOK OF MARRIAGE, MUN. FORM # 25",
+          "rows": [
+            590,
+            592
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "715",
+            "780"
+          ]
+        },
+        {
+          "description": "REGISTER , BOOK OF LEGAL INSTRUMENT,MUN. FORM # 111, BLUE",
+          "rows": [
+            595,
+            596
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "814",
+            "888"
+          ]
+        },
+        {
+          "description": "RPTAR FORM , 21.5 cm x 35cm",
+          "rows": [
+            621,
+            622
+          ],
+          "units": [
+            "PAD",
+            "REAM"
+          ],
+          "unit_costs": [
+            "11"
+          ]
+        },
+        {
+          "description": "SYRINGE , 3CC",
+          "rows": [
+            637,
+            1617
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "792"
+          ]
+        },
+        {
+          "description": "SYRINGE , 1CC",
+          "rows": [
+            638,
+            1616
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "660"
+          ]
+        },
+        {
+          "description": "SYRINGE , 5CC",
+          "rows": [
+            639,
+            1618
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "880"
+          ]
+        },
+        {
+          "description": "SYRINGE , 10CC",
+          "rows": [
+            640,
+            1619
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "935"
+          ]
+        },
+        {
+          "description": "ALCOHOL , Isopropyl, Pump Type, 500ml",
+          "rows": [
+            1491,
+            1772,
+            1773
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "154",
+            "168",
+            "264"
+          ]
+        },
+        {
+          "description": "ALCOHOL , Ethyl, 68%-72%, scented, 3.785 liters",
+          "rows": [
+            1492,
+            1774
+          ],
+          "units": [
+            "GALLON"
+          ],
+          "unit_costs": [
+            "413",
+            "726"
+          ]
+        },
+        {
+          "description": "ALCOHOL , 70% ISOPROPYL, 500ML",
+          "rows": [
+            1493,
+            1494,
+            1775
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "98",
+            "99"
+          ]
+        },
+        {
+          "description": "GEAR OIL , GRADE 90W",
+          "rows": [
+            1641,
+            1642
+          ],
+          "units": [
+            "PAIL",
+            "PIECE"
+          ],
+          "unit_costs": [
+            "396",
+            "6336"
+          ]
+        },
+        {
+          "description": "AL GLOVES , 100 PC PER BOX",
+          "rows": [
+            1652,
+            1653
+          ],
+          "units": [
+            "BOX",
+            "box"
+          ],
+          "unit_costs": [
+            "396",
+            "432"
+          ]
+        },
+        {
+          "description": "ALBENDAZOLE , 1 LITER",
+          "rows": [
+            1654,
+            1655
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "2640",
+            "2880"
+          ]
+        },
+        {
+          "description": "DEXAMETHASONE , 100ML",
+          "rows": [
+            1659,
+            1660
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "660",
+            "720"
+          ]
+        },
+        {
+          "description": "METAL NEEDLE , GAUGE 17X3/4 INCH, 12 PER BOX",
+          "rows": [
+            1672,
+            1673
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "396",
+            "432"
+          ]
+        },
+        {
+          "description": "METAL NEEDLE , GAUGE 18X3/4 INCH, 12 PER BOX",
+          "rows": [
+            1674,
+            1675
+          ],
+          "units": [
+            "BOX",
+            "box"
+          ],
+          "unit_costs": [
+            "396",
+            "432"
+          ]
+        },
+        {
+          "description": "MULTIVITAMINS , 100ML",
+          "rows": [
+            1676,
+            1677
+          ],
+          "units": [
+            "BOTTLE",
+            "bottle"
+          ],
+          "unit_costs": [
+            "660",
+            "720"
+          ]
+        },
+        {
+          "description": "OXYTETRACYCLINE , 100ML",
+          "rows": [
+            1682,
+            1683
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "1008",
+            "924"
+          ]
+        },
+        {
+          "description": "SQUASH SEEDS , 250G",
+          "rows": [
+            1688,
+            1706
+          ],
+          "units": [
+            "CAN"
+          ],
+          "unit_costs": [
+            "2090",
+            "3600"
+          ]
+        },
+        {
+          "description": "TOMATO SEEDS , 25G",
+          "rows": [
+            1690,
+            1707
+          ],
+          "units": [
+            "CAN"
+          ],
+          "unit_costs": [
+            "2069",
+            "3240"
+          ]
+        },
+        {
+          "description": "VIT.ADE , 100ML",
+          "rows": [
+            1691,
+            1692
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "1056",
+            "1152"
+          ]
+        },
+        {
+          "description": "PROSTAGLANDIN , 30ML",
+          "rows": [
+            1693,
+            1694
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "2376",
+            "2592"
+          ]
+        },
+        {
+          "description": "TYLOSIN COLISTIN PREDNISOLONE , 100ML",
+          "rows": [
+            1696,
+            1697
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "1056",
+            "1152"
+          ]
+        },
+        {
+          "description": "BROOM (Walis Tambo)",
+          "rows": [
+            1731,
+            1798
+          ],
+          "units": [
+            "PIECE",
+            "piece"
+          ],
+          "unit_costs": [
+            "150"
+          ]
+        },
+        {
+          "description": "BROOM (Walis Ting-ting)",
+          "rows": [
+            1732,
+            1799
+          ],
+          "units": [
+            "PIECE",
+            "piece"
+          ],
+          "unit_costs": [
+            "32"
+          ]
+        },
+        {
+          "description": "CLEANER, Toilet Bowl and Urinal",
+          "rows": [
+            1733,
+            1823
+          ],
+          "units": [
+            "BOTTLE",
+            "bottle"
+          ],
+          "unit_costs": [
+            "50"
+          ]
+        },
+        {
+          "description": "CLEANSER, Scouring Powder",
+          "rows": [
+            1734,
+            1824
+          ],
+          "units": [
+            "PLASTIC CONTAINER",
+            "plastic container"
+          ],
+          "unit_costs": [
+            "29"
+          ]
+        },
+        {
+          "description": "DETERGENT POWDER, all purpose",
+          "rows": [
+            1736,
+            1839
+          ],
+          "units": [
+            "POUCH",
+            "pouch"
+          ],
+          "unit_costs": [
+            "65"
+          ]
+        },
+        {
+          "description": "DISINFECTANT SPRAY",
+          "rows": [
+            1737,
+            1841
+          ],
+          "units": [
+            "CAN",
+            "can"
+          ],
+          "unit_costs": [
+            "168"
+          ]
+        },
+        {
+          "description": "DUST PAN",
+          "rows": [
+            1738,
+            1849
+          ],
+          "units": [
+            "PIECE",
+            "piece"
+          ],
+          "unit_costs": [
+            "57"
+          ]
+        },
+        {
+          "description": "SCOURING PAD",
+          "rows": [
+            1744,
+            1944
+          ],
+          "units": [
+            "PACK",
+            "pack"
+          ],
+          "unit_costs": [
+            "103"
+          ]
+        },
+        {
+          "description": "TOILET TISSUE PAPER, 2 ply",
+          "rows": [
+            1764,
+            1982
+          ],
+          "units": [
+            "PACK",
+            "pack"
+          ],
+          "unit_costs": [
+            "120"
+          ]
+        },
+        {
+          "description": "AIR FRESHENER , 180 GRAMS",
+          "rows": [
+            1770,
+            1771
+          ],
+          "units": [
+            "can"
+          ],
+          "unit_costs": [
+            "238",
+            "260"
+          ]
+        },
+        {
+          "description": "BOTTLED WATER , Purified, 5 gallon",
+          "rows": [
+            1800,
+            2248
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "264"
+          ]
+        },
+        {
+          "description": "BOTTLED WATER , Purified, 5 gallon, Refill",
+          "rows": [
+            1801,
+            2249
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "22"
+          ]
+        },
+        {
+          "description": "BOTTLED WATER , Distilled, 355 ml",
+          "rows": [
+            1802,
+            2244
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "7"
+          ]
+        },
+        {
+          "description": "BOTTLED WATER , Distilled, 500 ml",
+          "rows": [
+            1803,
+            2246
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "8"
+          ]
+        },
+        {
+          "description": "BOTTLED WATER , Distilled, 1 Liter",
+          "rows": [
+            1804,
+            2242
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "14"
+          ]
+        },
+        {
+          "description": "BOTTLED WATER , Distilled, 1.5 Liter",
+          "rows": [
+            1805,
+            2243
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "22"
+          ]
+        },
+        {
+          "description": "BOTTLED WATER , Distilled, 4 Liter",
+          "rows": [
+            1806,
+            2245
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "46"
+          ]
+        },
+        {
+          "description": "BOTTLED WATER , Distilled, 6 Liter",
+          "rows": [
+            1807,
+            2247
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "51"
+          ]
+        },
+        {
+          "description": "CARBONATED DRINK , In Can, 330 ml",
+          "rows": [
+            1812,
+            2250
+          ],
+          "units": [
+            "CAN"
+          ],
+          "unit_costs": [
+            "37"
+          ]
+        },
+        {
+          "description": "CARBONATED DRINK , PET, 1.5 Liter",
+          "rows": [
+            1813,
+            2251
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "79"
+          ]
+        },
+        {
+          "description": "COFFEE , 25 grams",
+          "rows": [
+            1825,
+            2253
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "23"
+          ]
+        },
+        {
+          "description": "COFFEE , 26 grams, 3 in 1",
+          "rows": [
+            1826,
+            1827,
+            2254
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "14",
+            "16"
+          ]
+        },
+        {
+          "description": "COFFEE , 30 grams",
+          "rows": [
+            1828,
+            2255
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "14"
+          ]
+        },
+        {
+          "description": "COFFEE , 33 grams, 3 in 1",
+          "rows": [
+            1829,
+            2256
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "13"
+          ]
+        },
+        {
+          "description": "COFFEE , 46 grams",
+          "rows": [
+            1830,
+            2257
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "55"
+          ]
+        },
+        {
+          "description": "COFFEE , 50 grams",
+          "rows": [
+            1831,
+            2258
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "42"
+          ]
+        },
+        {
+          "description": "COFFEE , 92 grams",
+          "rows": [
+            1832,
+            2259
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "105"
+          ]
+        },
+        {
+          "description": "COFFEE , 100 grams",
+          "rows": [
+            1833,
+            2252
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "86"
+          ]
+        },
+        {
+          "description": "COFFEE , COFFEE MIX, 3 IN 1, 8 GRAMS, 60S",
+          "rows": [
+            1834,
+            2260
+          ],
+          "units": [
+            "BOX"
+          ],
+          "unit_costs": [
+            "396"
+          ]
+        },
+        {
+          "description": "CUPCAKE , 10pcs x 28 grams",
+          "rows": [
+            1837,
+            2261
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "185"
+          ]
+        },
+        {
+          "description": "EGG , LARGE",
+          "rows": [
+            1850,
+            1851
+          ],
+          "units": [
+            "PIECE",
+            "TRAY"
+          ],
+          "unit_costs": [
+            "198",
+            "8"
+          ]
+        },
+        {
+          "description": "JUICE , Coconut Juice, PET, 355 ml",
+          "rows": [
+            1868,
+            2263
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "45"
+          ]
+        },
+        {
+          "description": "JUICE , Orange Juice, Tetra Pack, 200 ml",
+          "rows": [
+            1869,
+            2265
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "13"
+          ]
+        },
+        {
+          "description": "JUICE , Orange Juice, PET, 355 ml",
+          "rows": [
+            1870,
+            2264
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "40"
+          ]
+        },
+        {
+          "description": "JUICE , Pineapple Juice, In Can, 240 ml",
+          "rows": [
+            1871,
+            2266
+          ],
+          "units": [
+            "CAN"
+          ],
+          "unit_costs": [
+            "40"
+          ]
+        },
+        {
+          "description": "JUICE ,",
+          "rows": [
+            1872,
+            2262
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "125"
+          ]
+        },
+        {
+          "description": "MEALS , SNACK\na. Traditional Filipino delicacy or noodles/pasta dish or cake/ pastry/ sandwich.\nb. Bottled water",
+          "rows": [
+            1883,
+            2268
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "100"
+          ]
+        },
+        {
+          "description": "MEALS , LUNCH \na. One(1) meat or fish/ seafood dish\nb. Vegetable\nc. Soup\nd. Rice\ne. Dessert\nf. Bottled Water",
+          "rows": [
+            1884,
+            2267,
+            2274
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "100",
+            "200"
+          ]
+        },
+        {
+          "description": "SOAP , ANTIBACTERIAL, 135g, set of 3",
+          "rows": [
+            1956,
+            1957
+          ],
+          "units": [
+            "pack"
+          ],
+          "unit_costs": [
+            "176",
+            "192"
+          ]
+        },
+        {
+          "description": "SUGAR , WHITE SUGAR, 1 KILO",
+          "rows": [
+            1972,
+            2271
+          ],
+          "units": [
+            "BAG"
+          ],
+          "unit_costs": [
+            "66"
+          ]
+        },
+        {
+          "description": "SUGAR , WHITE SUGAR, 850 GRAMS",
+          "rows": [
+            1973,
+            2273
+          ],
+          "units": [
+            "BAG"
+          ],
+          "unit_costs": [
+            "61"
+          ]
+        },
+        {
+          "description": "SUGAR , WHITE SUGAR, 50 KILO",
+          "rows": [
+            1974,
+            2272
+          ],
+          "units": [
+            "SACK"
+          ],
+          "unit_costs": [
+            "3355"
+          ]
+        },
+        {
+          "description": "SUGAR , BROWN SUGAR, 1 KILO",
+          "rows": [
+            1975,
+            2269
+          ],
+          "units": [
+            "BAG"
+          ],
+          "unit_costs": [
+            "50"
+          ]
+        },
+        {
+          "description": "SUGAR , BROWN SUGAR, 50 KILO",
+          "rows": [
+            1976,
+            2270
+          ],
+          "units": [
+            "SACK"
+          ],
+          "unit_costs": [
+            "2585"
+          ]
+        },
+        {
+          "description": "TOILET TISSUE PAPER , 3-PLY SHEETS, 12 ROLLS",
+          "rows": [
+            1983,
+            1984
+          ],
+          "units": [
+            "PACK"
+          ],
+          "unit_costs": [
+            "251",
+            "274"
+          ]
+        },
+        {
+          "description": "WEIGHT PLATES , 10 LBS, STAINLESS",
+          "rows": [
+            2064,
+            2065
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "264",
+            "528"
+          ]
+        },
+        {
+          "description": "COMPUTER LAPTOP, Processor: AMD R3-7320U, Storage: 256GB SSD, RAM: 8GB DDR5, atleast 15.6 inches LED Display 144Hz IPS- Type FHD, GPU: AMD RADEON",
+          "rows": [
+            2153,
+            2154
+          ],
+          "units": [
+            "UNIT"
+          ],
+          "unit_costs": [
+            "27500",
+            "28600"
+          ]
+        },
+        {
+          "description": "DAIRY PRODUCTS (1 liter pasteurized milk, espasol de leche, pastillas jumbo 18pcs.)",
+          "rows": [
+            2207,
+            2209
+          ],
+          "units": [
+            "PACKS"
+          ],
+          "unit_costs": [
+            "1000",
+            "2000"
+          ]
+        },
+        {
+          "description": "AIRCON CLEANING , 3 TONNER",
+          "rows": [
+            2282,
+            2283
+          ],
+          "units": [
+            "SET"
+          ],
+          "unit_costs": [
+            "2640",
+            "2880"
+          ]
+        },
+        {
+          "description": "AIRCON CLEANING , SPLIT TYPE",
+          "rows": [
+            2284,
+            2285
+          ],
+          "units": [
+            "SET"
+          ],
+          "unit_costs": [
+            "1980",
+            "2160"
+          ]
+        },
+        {
+          "description": "AIRCON CLEANING , WINDOW TYPE",
+          "rows": [
+            2286,
+            2287
+          ],
+          "units": [
+            "SET"
+          ],
+          "unit_costs": [
+            "1008",
+            "924"
+          ]
+        },
+        {
+          "description": "PRINTER RESET ,",
+          "rows": [
+            2295,
+            2296
+          ],
+          "units": [
+            "SET"
+          ],
+          "unit_costs": [
+            "660",
+            "720"
+          ]
+        },
+        {
+          "description": "BPLO",
+          "rows": [
+            2297,
+            2302,
+            2381,
+            2385
+          ],
+          "units": [
+            "LOT",
+            "lot"
+          ],
+          "unit_costs": [
+            "20000",
+            "5000",
+            "50000"
+          ]
+        },
+        {
+          "description": "SB",
+          "rows": [
+            2298,
+            2306
+          ],
+          "units": [
+            "LOT"
+          ],
+          "unit_costs": [
+            "11800",
+            "23500"
+          ]
+        },
+        {
+          "description": "ENGINE OIL , Full Synthetic 5W-40, 1 Liter",
+          "rows": [
+            2321,
+            2322
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "726",
+            "792"
+          ]
+        },
+        {
+          "description": "GREASE ,",
+          "rows": [
+            2324,
+            2325
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "275",
+            "300"
+          ]
+        },
+        {
+          "description": "HYDRAULIC OIL , 4 Liters",
+          "rows": [
+            2328,
+            2329
+          ],
+          "units": [
+            "BOTTLE"
+          ],
+          "unit_costs": [
+            "1452",
+            "1584"
+          ]
+        },
+        {
+          "description": "BINDING , BOOK BINDING OF ANNUAL BUDGET",
+          "rows": [
+            2419,
+            2441
+          ],
+          "units": [
+            "SET"
+          ],
+          "unit_costs": [
+            "550",
+            "600"
+          ]
+        },
+        {
+          "description": "BINDING , BOOK BINDING OF BIRTH CERTIFICATE, MAROON",
+          "rows": [
+            2420,
+            2443
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "743",
+            "810"
+          ]
+        },
+        {
+          "description": "BINDING , BOOK BINDING OF MARRIAGE CERTIFICATE, GREEN",
+          "rows": [
+            2421,
+            2444
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "743",
+            "810"
+          ]
+        },
+        {
+          "description": "BINDING , BOOK BINDING OF DEATH CERTIFICATE, BLACK",
+          "rows": [
+            2422,
+            2446
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "743",
+            "810"
+          ]
+        },
+        {
+          "description": "WINDOW OS , WINDOWS 11OS LICENSED PROFESSIONAL EDITION",
+          "rows": [
+            2462,
+            2474
+          ],
+          "units": [
+            "PIECE"
+          ],
+          "unit_costs": [
+            "18000",
+            "3850"
+          ]
+        }
+      ],
+      "exact_duplicate_candidate_row_sets": [
+        [
+          182,
+          186
+        ],
+        [
+          187,
+          191
+        ],
+        [
+          237,
+          492
+        ],
+        [
+          239,
+          493
+        ],
+        [
+          240,
+          494
+        ],
+        [
+          241,
+          495
+        ],
+        [
+          465,
+          466
+        ]
+      ],
+      "other_labeled_rows": [
+        {
+          "row": 8,
+          "label": "Office Supplies - A",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 117,
+          "label": "OFFICE SUPPLIES - B",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 260,
+          "label": "Office Supplies - B",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 557,
+          "label": "ACCOUNTABLE FORMS",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 605,
+          "label": "NON-ACCOUNTABLE FORMS",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 635,
+          "label": "ANIMAL/ZOOLOGICAL SUPPLIES EXPENSES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 643,
+          "label": "Animal/Zoological Supplies Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 644,
+          "label": "Animal/Zoological Supplies Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 648,
+          "label": "DRUGS AND MEDICINES EXPENSES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1480,
+          "label": "Drugs and Medicines Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1481,
+          "label": "Drugs and Medicines Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1482,
+          "label": "Drugs and Medicines Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1486,
+          "label": "MEDICAL, DENTAL, AND LABORATORY SUPPLIES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1626,
+          "label": "Medical, Dental, and Laboratory Supplies",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1630,
+          "label": "FUEL, OIL, AND LUBRICANTS EXPENSES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1650,
+          "label": "AGRICULTURAL AND MARINE SUPPLIES EXPENSES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1716,
+          "label": "TEXTBOOKS AND INSTRUCTIONAL MATERIALS EXPENSES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1717,
+          "label": "Textbooks and Instructional Materials Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1718,
+          "label": "Textbooks and Instructional Materials Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1719,
+          "label": "Textbooks and Instructional Materials Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1720,
+          "label": "Textbooks and Instructional Materials Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1721,
+          "label": "Textbooks and Instructional Materials Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1725,
+          "label": "OTHER SUPPLIES AND MATERIALS EXPENSES - A",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 1769,
+          "label": "OTHER SUPPLIES AND MATERIALS EXPENSES - B",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2121,
+          "label": "Other Supplies and Materials Expenses - B",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2128,
+          "label": "OTHER SUPPLIES AND MATERIALS (SEMI-EXP) - A",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2143,
+          "label": "OTHER SUPPLIES AND MATERIALS (SEMI-EXP) - B",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2241,
+          "label": "REPRESENTATION EXPENSES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2281,
+          "label": "REPAIRS AND MAINTENANCE (OFFICE EQUIPMENT)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2294,
+          "label": "REPAIRS AND MAINTENANCE (ICT EQUIPMENT)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2301,
+          "label": "REPAIRS AND MAINTENANCE (FURNITURES AND FIXTURES)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2303,
+          "label": "Repairs and Maintenance (Furnitures and Fixtures)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2307,
+          "label": "REPAIRS AND MAINTENANCE (TRANSPO-MOTOR VEHICLE)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2386,
+          "label": "REPAIRS AND MAINTENANCE (CHE)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2387,
+          "label": "Repairs and Maintenance (CHE)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2388,
+          "label": "Repairs and Maintenance (CHE)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2391,
+          "label": "REPAIRS AND MAINTENANCE (BUILDING AND OTHER STRUCTURES)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2397,
+          "label": "ADVERTISING EXPENSES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2418,
+          "label": "PRINTING AND PUBLICATION EXPENSES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2454,
+          "label": "RENT EXPENSES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2458,
+          "label": "Rent Expenses",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2461,
+          "label": "OTHER MOE (SUBSCRIPTION EXPENSES)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2475,
+          "label": "Other MOE (Subscription Expenses)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2476,
+          "label": "Other MOE (Subscription Expenses)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2477,
+          "label": "Other MOE (Subscription Expenses)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2478,
+          "label": "Other MOE (Subscription Expenses)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2479,
+          "label": "Other MOE (Subscription Expenses)",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2482,
+          "label": "OTHER PROFESSIONAL SERVICES",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2483,
+          "label": "Other Professional Services",
+          "unit": "",
+          "unit_cost_raw": ""
+        },
+        {
+          "row": 2484,
+          "label": "Other Professional Services",
+          "unit": "",
+          "unit_cost_raw": ""
+        }
+      ],
+      "quarter_cell_counts": {
+        "quarter_quantity_blank": 390999,
+        "quarter_amount_dash": 340371,
+        "quarter_amount_blank": 51246,
+        "quarter_quantity_positive": 3520,
+        "quarter_amount_numeric": 3518,
+        "quarter_quantity_zero": 617,
+        "quarter_amount_other_text": 1
+      },
+      "quarter_cell_examples": {
+        "quantity_positive": [
+          {
+            "cell": "F120",
+            "value": "50",
+            "group": "MAYOR'S OFFICE"
+          },
+          {
+            "cell": "F131",
+            "value": "200",
+            "group": "MAYOR'S OFFICE"
+          },
+          {
+            "cell": "F135",
+            "value": "25",
+            "group": "MAYOR'S OFFICE"
+          },
+          {
+            "cell": "F146",
+            "value": "135",
+            "group": "MAYOR'S OFFICE"
+          },
+          {
+            "cell": "F148",
+            "value": "105",
+            "group": "MAYOR'S OFFICE"
+          },
+          {
+            "cell": "F161",
+            "value": "20",
+            "group": "MAYOR'S OFFICE"
+          },
+          {
+            "cell": "F162",
+            "value": "20",
+            "group": "MAYOR'S OFFICE"
+          },
+          {
+            "cell": "F165",
+            "value": "30",
+            "group": "MAYOR'S OFFICE"
+          }
+        ],
+        "amount_other_text": [
+          {
+            "cell": "CL258",
+            "value": "#REF!"
+          }
+        ]
+      },
+      "group_quantity_counts": [
+        {
+          "group": "MAYOR'S OFFICE",
+          "counts": {
+            "quarter_quantity_blank": 9172,
+            "quarter_amount_dash": 8201,
+            "quarter_amount_blank": 971,
+            "quarter_quantity_positive": 236,
+            "quarter_amount_numeric": 236
+          }
+        },
+        {
+          "group": "BPLO",
+          "counts": {
+            "quarter_quantity_blank": 9273,
+            "quarter_amount_dash": 8036,
+            "quarter_quantity_positive": 87,
+            "quarter_amount_numeric": 87,
+            "quarter_amount_blank": 1285,
+            "quarter_quantity_zero": 48
+          }
+        },
+        {
+          "group": "PLEB",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "SANGGUNIANG BAYAN",
+          "counts": {
+            "quarter_quantity_blank": 8993,
+            "quarter_amount_dash": 7840,
+            "quarter_amount_blank": 1156,
+            "quarter_quantity_positive": 412,
+            "quarter_amount_numeric": 412,
+            "quarter_quantity_zero": 3
+          }
+        },
+        {
+          "group": "HRMO",
+          "counts": {
+            "quarter_quantity_blank": 9324,
+            "quarter_amount_dash": 8474,
+            "quarter_amount_blank": 850,
+            "quarter_quantity_positive": 84,
+            "quarter_amount_numeric": 84
+          }
+        },
+        {
+          "group": "MPDO",
+          "counts": {
+            "quarter_quantity_blank": 9296,
+            "quarter_amount_dash": 8016,
+            "quarter_amount_blank": 1280,
+            "quarter_quantity_positive": 112,
+            "quarter_amount_numeric": 112
+          }
+        },
+        {
+          "group": "MCR",
+          "counts": {
+            "quarter_quantity_blank": 9293,
+            "quarter_amount_dash": 8164,
+            "quarter_amount_blank": 1129,
+            "quarter_quantity_positive": 115,
+            "quarter_amount_numeric": 115
+          }
+        },
+        {
+          "group": "GSO",
+          "counts": {
+            "quarter_quantity_blank": 9407,
+            "quarter_amount_dash": 8123,
+            "quarter_amount_blank": 1284,
+            "quarter_amount_other_text": 1,
+            "quarter_quantity_positive": 1
+          }
+        },
+        {
+          "group": "BUILDING, GROUNDS, and R&M",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "BUDGET",
+          "counts": {
+            "quarter_quantity_blank": 9254,
+            "quarter_amount_dash": 8061,
+            "quarter_amount_blank": 1189,
+            "quarter_quantity_positive": 154,
+            "quarter_amount_numeric": 158
+          }
+        },
+        {
+          "group": "ACCOUNTING",
+          "counts": {
+            "quarter_quantity_blank": 9168,
+            "quarter_amount_dash": 8036,
+            "quarter_amount_blank": 1165,
+            "quarter_quantity_positive": 207,
+            "quarter_amount_numeric": 207,
+            "quarter_quantity_zero": 33
+          }
+        },
+        {
+          "group": "TREASURY",
+          "counts": {
+            "quarter_quantity_blank": 9210,
+            "quarter_amount_dash": 8129,
+            "quarter_amount_blank": 1081,
+            "quarter_quantity_positive": 198,
+            "quarter_amount_numeric": 198
+          }
+        },
+        {
+          "group": "ASSESSOR",
+          "counts": {
+            "quarter_quantity_blank": 9294,
+            "quarter_amount_dash": 8026,
+            "quarter_quantity_positive": 114,
+            "quarter_amount_numeric": 114,
+            "quarter_amount_blank": 1268
+          }
+        },
+        {
+          "group": "COA",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "LIBRARY",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "LEGAL OFFICE",
+          "counts": {
+            "quarter_quantity_blank": 9398,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1274,
+            "quarter_quantity_positive": 10,
+            "quarter_amount_numeric": 10
+          }
+        },
+        {
+          "group": "MTC",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "MDRRMO",
+          "counts": {
+            "quarter_quantity_blank": 9202,
+            "quarter_amount_dash": 7972,
+            "quarter_amount_blank": 1230,
+            "quarter_quantity_positive": 206,
+            "quarter_amount_numeric": 206
+          }
+        },
+        {
+          "group": "PNP",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "BJMP",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "BFP",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "NEUST-TOC",
+          "counts": {
+            "quarter_quantity_blank": 9186,
+            "quarter_amount_dash": 7928,
+            "quarter_quantity_positive": 219,
+            "quarter_amount_numeric": 219,
+            "quarter_amount_blank": 1261,
+            "quarter_quantity_zero": 3
+          }
+        },
+        {
+          "group": "MHO - NUTRITION",
+          "counts": {
+            "quarter_quantity_blank": 9048,
+            "quarter_amount_dash": 8371,
+            "quarter_amount_blank": 828,
+            "quarter_quantity_positive": 209,
+            "quarter_amount_numeric": 209,
+            "quarter_quantity_zero": 151
+          }
+        },
+        {
+          "group": "MHO",
+          "counts": {
+            "quarter_quantity_blank": 8849,
+            "quarter_amount_dash": 7960,
+            "quarter_amount_blank": 1268,
+            "quarter_quantity_positive": 180,
+            "quarter_amount_numeric": 180,
+            "quarter_quantity_zero": 379
+          }
+        },
+        {
+          "group": "OMPESM",
+          "counts": {
+            "quarter_quantity_blank": 9300,
+            "quarter_amount_dash": 8125,
+            "quarter_quantity_positive": 108,
+            "quarter_amount_numeric": 104,
+            "quarter_amount_blank": 1179
+          }
+        },
+        {
+          "group": "STREETLIGHTS",
+          "counts": {
+            "quarter_quantity_blank": 9407,
+            "quarter_amount_dash": 8123,
+            "quarter_amount_blank": 1284,
+            "quarter_quantity_positive": 1,
+            "quarter_amount_numeric": 1
+          }
+        },
+        {
+          "group": "PARK, PLAZA, and MONUMENT",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "MSWDO",
+          "counts": {
+            "quarter_quantity_blank": 9231,
+            "quarter_amount_dash": 8038,
+            "quarter_amount_blank": 1193,
+            "quarter_quantity_positive": 177,
+            "quarter_amount_numeric": 177
+          }
+        },
+        {
+          "group": "MYDO",
+          "counts": {
+            "quarter_quantity_blank": 9300,
+            "quarter_amount_dash": 8043,
+            "quarter_amount_blank": 1257,
+            "quarter_quantity_positive": 108,
+            "quarter_amount_numeric": 108
+          }
+        },
+        {
+          "group": "OSCA",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "PDAO",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "CEMETERY",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "TOURISM",
+          "counts": {
+            "quarter_quantity_blank": 9273,
+            "quarter_amount_dash": 8006,
+            "quarter_amount_blank": 1267,
+            "quarter_quantity_positive": 135,
+            "quarter_amount_numeric": 135
+          }
+        },
+        {
+          "group": "AGRICULTURE",
+          "counts": {
+            "quarter_quantity_blank": 9275,
+            "quarter_amount_dash": 8126,
+            "quarter_amount_blank": 1150,
+            "quarter_quantity_positive": 133,
+            "quarter_amount_numeric": 132
+          }
+        },
+        {
+          "group": "MABEU",
+          "counts": {
+            "quarter_quantity_blank": 9373,
+            "quarter_amount_dash": 8113,
+            "quarter_amount_blank": 1260,
+            "quarter_quantity_positive": 35,
+            "quarter_amount_numeric": 35
+          }
+        },
+        {
+          "group": "MENRO",
+          "counts": {
+            "quarter_quantity_blank": 9268,
+            "quarter_amount_dash": 8164,
+            "quarter_amount_blank": 1104,
+            "quarter_quantity_positive": 140,
+            "quarter_amount_numeric": 140
+          }
+        },
+        {
+          "group": "ENGINEERING",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "MCEDO",
+          "counts": {
+            "quarter_quantity_blank": 9269,
+            "quarter_amount_dash": 8064,
+            "quarter_quantity_positive": 139,
+            "quarter_amount_numeric": 139,
+            "quarter_amount_blank": 1205
+          }
+        },
+        {
+          "group": "PUBLIC MARKET",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "SLAUGHTERHOUSE",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "20% MDF",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        },
+        {
+          "group": "5% MDRRMF",
+          "counts": {
+            "quarter_quantity_blank": 9408,
+            "quarter_amount_dash": 8124,
+            "quarter_amount_blank": 1284
+          }
+        }
+      ],
+      "quarter_amount_checks": {
+        "numeric_pairs_checked": 3514,
+        "positive_quantity_with_missing_price_or_numeric_amount": 6
+      },
+      "quarter_amount_issues": [
+        {
+          "cell": "CJ312",
+          "group": "GSO",
+          "quantity": "4",
+          "unit_cost_raw": "1200",
+          "stored_amount_raw": "",
+          "issue": "Missing price or numeric amount"
+        },
+        {
+          "cell": "JK499",
+          "group": "OMPESM",
+          "quantity": "3",
+          "unit_cost_raw": "1064",
+          "stored_amount_raw": "",
+          "issue": "Missing price or numeric amount"
+        },
+        {
+          "cell": "JK500",
+          "group": "OMPESM",
+          "quantity": "2",
+          "unit_cost_raw": "847",
+          "stored_amount_raw": "",
+          "issue": "Missing price or numeric amount"
+        },
+        {
+          "cell": "JK501",
+          "group": "OMPESM",
+          "quantity": "2",
+          "unit_cost_raw": "847",
+          "stored_amount_raw": "",
+          "issue": "Missing price or numeric amount"
+        },
+        {
+          "cell": "JK502",
+          "group": "OMPESM",
+          "quantity": "2",
+          "unit_cost_raw": "847",
+          "stored_amount_raw": "",
+          "issue": "Missing price or numeric amount"
+        },
+        {
+          "cell": "NF1655",
+          "group": "AGRICULTURE",
+          "quantity": "2",
+          "unit_cost_raw": "2880",
+          "stored_amount_raw": "",
+          "issue": "Missing price or numeric amount"
+        }
+      ],
+      "print_options": {
+        "pageSetup": null,
+        "pageMargins": {
+          "left": "0.7",
+          "right": "0.7",
+          "top": "0.75",
+          "bottom": "0.75",
+          "header": "0.3",
+          "footer": "0.3"
+        },
+        "printOptions": null
+      }
+    }
+  ]
+}

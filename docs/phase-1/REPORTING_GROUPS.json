@@ -1,0 +1,968 @@
+[
+  {
+    "source_sheet": "Sheet1",
+    "label": "MAYOR'S OFFICE",
+    "source_header": "F4",
+    "start_column_number": 6,
+    "quantity_cells": [
+      "F{row}",
+      "H{row}",
+      "J{row}",
+      "L{row}"
+    ],
+    "amount_cells": [
+      "G{row}",
+      "I{row}",
+      "K{row}",
+      "M{row}"
+    ],
+    "annual_quantity_cell": "N{row}",
+    "annual_amount_cell": "O{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "BPLO",
+    "source_header": "Q4",
+    "start_column_number": 17,
+    "quantity_cells": [
+      "Q{row}",
+      "S{row}",
+      "U{row}",
+      "W{row}"
+    ],
+    "amount_cells": [
+      "R{row}",
+      "T{row}",
+      "V{row}",
+      "X{row}"
+    ],
+    "annual_quantity_cell": "Y{row}",
+    "annual_amount_cell": "Z{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "PLEB",
+    "source_header": "AB4",
+    "start_column_number": 28,
+    "quantity_cells": [
+      "AB{row}",
+      "AD{row}",
+      "AF{row}",
+      "AH{row}"
+    ],
+    "amount_cells": [
+      "AC{row}",
+      "AE{row}",
+      "AG{row}",
+      "AI{row}"
+    ],
+    "annual_quantity_cell": "AJ{row}",
+    "annual_amount_cell": "AK{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "SANGGUNIANG BAYAN",
+    "source_header": "AM4",
+    "start_column_number": 39,
+    "quantity_cells": [
+      "AM{row}",
+      "AO{row}",
+      "AQ{row}",
+      "AS{row}"
+    ],
+    "amount_cells": [
+      "AN{row}",
+      "AP{row}",
+      "AR{row}",
+      "AT{row}"
+    ],
+    "annual_quantity_cell": "AU{row}",
+    "annual_amount_cell": "AV{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "HRMO",
+    "source_header": "AX4",
+    "start_column_number": 50,
+    "quantity_cells": [
+      "AX{row}",
+      "AZ{row}",
+      "BB{row}",
+      "BD{row}"
+    ],
+    "amount_cells": [
+      "AY{row}",
+      "BA{row}",
+      "BC{row}",
+      "BE{row}"
+    ],
+    "annual_quantity_cell": "BF{row}",
+    "annual_amount_cell": "BG{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MPDO",
+    "source_header": "BI4",
+    "start_column_number": 61,
+    "quantity_cells": [
+      "BI{row}",
+      "BK{row}",
+      "BM{row}",
+      "BO{row}"
+    ],
+    "amount_cells": [
+      "BJ{row}",
+      "BL{row}",
+      "BN{row}",
+      "BP{row}"
+    ],
+    "annual_quantity_cell": "BQ{row}",
+    "annual_amount_cell": "BR{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MCR",
+    "source_header": "BT4",
+    "start_column_number": 72,
+    "quantity_cells": [
+      "BT{row}",
+      "BV{row}",
+      "BX{row}",
+      "BZ{row}"
+    ],
+    "amount_cells": [
+      "BU{row}",
+      "BW{row}",
+      "BY{row}",
+      "CA{row}"
+    ],
+    "annual_quantity_cell": "CB{row}",
+    "annual_amount_cell": "CC{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "GSO",
+    "source_header": "CE4",
+    "start_column_number": 83,
+    "quantity_cells": [
+      "CE{row}",
+      "CG{row}",
+      "CI{row}",
+      "CK{row}"
+    ],
+    "amount_cells": [
+      "CF{row}",
+      "CH{row}",
+      "CJ{row}",
+      "CL{row}"
+    ],
+    "annual_quantity_cell": "CM{row}",
+    "annual_amount_cell": "CN{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "BUILDING, GROUNDS, and R&M",
+    "source_header": "CP4",
+    "start_column_number": 94,
+    "quantity_cells": [
+      "CP{row}",
+      "CR{row}",
+      "CT{row}",
+      "CV{row}"
+    ],
+    "amount_cells": [
+      "CQ{row}",
+      "CS{row}",
+      "CU{row}",
+      "CW{row}"
+    ],
+    "annual_quantity_cell": "CX{row}",
+    "annual_amount_cell": "CY{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "BUDGET",
+    "source_header": "DA4",
+    "start_column_number": 105,
+    "quantity_cells": [
+      "DA{row}",
+      "DC{row}",
+      "DE{row}",
+      "DG{row}"
+    ],
+    "amount_cells": [
+      "DB{row}",
+      "DD{row}",
+      "DF{row}",
+      "DH{row}"
+    ],
+    "annual_quantity_cell": "DI{row}",
+    "annual_amount_cell": "DJ{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "ACCOUNTING",
+    "source_header": "DL4",
+    "start_column_number": 116,
+    "quantity_cells": [
+      "DL{row}",
+      "DN{row}",
+      "DP{row}",
+      "DR{row}"
+    ],
+    "amount_cells": [
+      "DM{row}",
+      "DO{row}",
+      "DQ{row}",
+      "DS{row}"
+    ],
+    "annual_quantity_cell": "DT{row}",
+    "annual_amount_cell": "DU{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "TREASURY",
+    "source_header": "DW4",
+    "start_column_number": 127,
+    "quantity_cells": [
+      "DW{row}",
+      "DY{row}",
+      "EA{row}",
+      "EC{row}"
+    ],
+    "amount_cells": [
+      "DX{row}",
+      "DZ{row}",
+      "EB{row}",
+      "ED{row}"
+    ],
+    "annual_quantity_cell": "EE{row}",
+    "annual_amount_cell": "EF{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "ASSESSOR",
+    "source_header": "EH4",
+    "start_column_number": 138,
+    "quantity_cells": [
+      "EH{row}",
+      "EJ{row}",
+      "EL{row}",
+      "EN{row}"
+    ],
+    "amount_cells": [
+      "EI{row}",
+      "EK{row}",
+      "EM{row}",
+      "EO{row}"
+    ],
+    "annual_quantity_cell": "EP{row}",
+    "annual_amount_cell": "EQ{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "COA",
+    "source_header": "ES4",
+    "start_column_number": 149,
+    "quantity_cells": [
+      "ES{row}",
+      "EU{row}",
+      "EW{row}",
+      "EY{row}"
+    ],
+    "amount_cells": [
+      "ET{row}",
+      "EV{row}",
+      "EX{row}",
+      "EZ{row}"
+    ],
+    "annual_quantity_cell": "FA{row}",
+    "annual_amount_cell": "FB{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "LIBRARY",
+    "source_header": "FD4",
+    "start_column_number": 160,
+    "quantity_cells": [
+      "FD{row}",
+      "FF{row}",
+      "FH{row}",
+      "FJ{row}"
+    ],
+    "amount_cells": [
+      "FE{row}",
+      "FG{row}",
+      "FI{row}",
+      "FK{row}"
+    ],
+    "annual_quantity_cell": "FL{row}",
+    "annual_amount_cell": "FM{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "LEGAL OFFICE",
+    "source_header": "FO4",
+    "start_column_number": 171,
+    "quantity_cells": [
+      "FO{row}",
+      "FQ{row}",
+      "FS{row}",
+      "FU{row}"
+    ],
+    "amount_cells": [
+      "FP{row}",
+      "FR{row}",
+      "FT{row}",
+      "FV{row}"
+    ],
+    "annual_quantity_cell": "FW{row}",
+    "annual_amount_cell": "FX{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MTC",
+    "source_header": "FZ4",
+    "start_column_number": 182,
+    "quantity_cells": [
+      "FZ{row}",
+      "GB{row}",
+      "GD{row}",
+      "GF{row}"
+    ],
+    "amount_cells": [
+      "GA{row}",
+      "GC{row}",
+      "GE{row}",
+      "GG{row}"
+    ],
+    "annual_quantity_cell": "GH{row}",
+    "annual_amount_cell": "GI{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MDRRMO",
+    "source_header": "GK4",
+    "start_column_number": 193,
+    "quantity_cells": [
+      "GK{row}",
+      "GM{row}",
+      "GO{row}",
+      "GQ{row}"
+    ],
+    "amount_cells": [
+      "GL{row}",
+      "GN{row}",
+      "GP{row}",
+      "GR{row}"
+    ],
+    "annual_quantity_cell": "GS{row}",
+    "annual_amount_cell": "GT{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "PNP",
+    "source_header": "GV4",
+    "start_column_number": 204,
+    "quantity_cells": [
+      "GV{row}",
+      "GX{row}",
+      "GZ{row}",
+      "HB{row}"
+    ],
+    "amount_cells": [
+      "GW{row}",
+      "GY{row}",
+      "HA{row}",
+      "HC{row}"
+    ],
+    "annual_quantity_cell": "HD{row}",
+    "annual_amount_cell": "HE{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "BJMP",
+    "source_header": "HG4",
+    "start_column_number": 215,
+    "quantity_cells": [
+      "HG{row}",
+      "HI{row}",
+      "HK{row}",
+      "HM{row}"
+    ],
+    "amount_cells": [
+      "HH{row}",
+      "HJ{row}",
+      "HL{row}",
+      "HN{row}"
+    ],
+    "annual_quantity_cell": "HO{row}",
+    "annual_amount_cell": "HP{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "BFP",
+    "source_header": "HR4",
+    "start_column_number": 226,
+    "quantity_cells": [
+      "HR{row}",
+      "HT{row}",
+      "HV{row}",
+      "HX{row}"
+    ],
+    "amount_cells": [
+      "HS{row}",
+      "HU{row}",
+      "HW{row}",
+      "HY{row}"
+    ],
+    "annual_quantity_cell": "HZ{row}",
+    "annual_amount_cell": "IA{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "NEUST-TOC",
+    "source_header": "IC4",
+    "start_column_number": 237,
+    "quantity_cells": [
+      "IC{row}",
+      "IE{row}",
+      "IG{row}",
+      "II{row}"
+    ],
+    "amount_cells": [
+      "ID{row}",
+      "IF{row}",
+      "IH{row}",
+      "IJ{row}"
+    ],
+    "annual_quantity_cell": "IK{row}",
+    "annual_amount_cell": "IL{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MHO - NUTRITION",
+    "source_header": "IN4",
+    "start_column_number": 248,
+    "quantity_cells": [
+      "IN{row}",
+      "IP{row}",
+      "IR{row}",
+      "IT{row}"
+    ],
+    "amount_cells": [
+      "IO{row}",
+      "IQ{row}",
+      "IS{row}",
+      "IU{row}"
+    ],
+    "annual_quantity_cell": "IV{row}",
+    "annual_amount_cell": "IW{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MHO",
+    "source_header": "IY4",
+    "start_column_number": 259,
+    "quantity_cells": [
+      "IY{row}",
+      "JA{row}",
+      "JC{row}",
+      "JE{row}"
+    ],
+    "amount_cells": [
+      "IZ{row}",
+      "JB{row}",
+      "JD{row}",
+      "JF{row}"
+    ],
+    "annual_quantity_cell": "JG{row}",
+    "annual_amount_cell": "JH{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "OMPESM",
+    "source_header": "JJ4",
+    "start_column_number": 270,
+    "quantity_cells": [
+      "JJ{row}",
+      "JL{row}",
+      "JN{row}",
+      "JP{row}"
+    ],
+    "amount_cells": [
+      "JK{row}",
+      "JM{row}",
+      "JO{row}",
+      "JQ{row}"
+    ],
+    "annual_quantity_cell": "JR{row}",
+    "annual_amount_cell": "JS{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "STREETLIGHTS",
+    "source_header": "JU4",
+    "start_column_number": 281,
+    "quantity_cells": [
+      "JU{row}",
+      "JW{row}",
+      "JY{row}",
+      "KA{row}"
+    ],
+    "amount_cells": [
+      "JV{row}",
+      "JX{row}",
+      "JZ{row}",
+      "KB{row}"
+    ],
+    "annual_quantity_cell": "KC{row}",
+    "annual_amount_cell": "KD{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "PARK, PLAZA, and MONUMENT",
+    "source_header": "KF4",
+    "start_column_number": 292,
+    "quantity_cells": [
+      "KF{row}",
+      "KH{row}",
+      "KJ{row}",
+      "KL{row}"
+    ],
+    "amount_cells": [
+      "KG{row}",
+      "KI{row}",
+      "KK{row}",
+      "KM{row}"
+    ],
+    "annual_quantity_cell": "KN{row}",
+    "annual_amount_cell": "KO{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MSWDO",
+    "source_header": "KQ4",
+    "start_column_number": 303,
+    "quantity_cells": [
+      "KQ{row}",
+      "KS{row}",
+      "KU{row}",
+      "KW{row}"
+    ],
+    "amount_cells": [
+      "KR{row}",
+      "KT{row}",
+      "KV{row}",
+      "KX{row}"
+    ],
+    "annual_quantity_cell": "KY{row}",
+    "annual_amount_cell": "KZ{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MYDO",
+    "source_header": "LB4",
+    "start_column_number": 314,
+    "quantity_cells": [
+      "LB{row}",
+      "LD{row}",
+      "LF{row}",
+      "LH{row}"
+    ],
+    "amount_cells": [
+      "LC{row}",
+      "LE{row}",
+      "LG{row}",
+      "LI{row}"
+    ],
+    "annual_quantity_cell": "LJ{row}",
+    "annual_amount_cell": "LK{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "OSCA",
+    "source_header": "LM4",
+    "start_column_number": 325,
+    "quantity_cells": [
+      "LM{row}",
+      "LO{row}",
+      "LQ{row}",
+      "LS{row}"
+    ],
+    "amount_cells": [
+      "LN{row}",
+      "LP{row}",
+      "LR{row}",
+      "LT{row}"
+    ],
+    "annual_quantity_cell": "LU{row}",
+    "annual_amount_cell": "LV{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "PDAO",
+    "source_header": "LX4",
+    "start_column_number": 336,
+    "quantity_cells": [
+      "LX{row}",
+      "LZ{row}",
+      "MB{row}",
+      "MD{row}"
+    ],
+    "amount_cells": [
+      "LY{row}",
+      "MA{row}",
+      "MC{row}",
+      "ME{row}"
+    ],
+    "annual_quantity_cell": "MF{row}",
+    "annual_amount_cell": "MG{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "CEMETERY",
+    "source_header": "MI4",
+    "start_column_number": 347,
+    "quantity_cells": [
+      "MI{row}",
+      "MK{row}",
+      "MM{row}",
+      "MO{row}"
+    ],
+    "amount_cells": [
+      "MJ{row}",
+      "ML{row}",
+      "MN{row}",
+      "MP{row}"
+    ],
+    "annual_quantity_cell": "MQ{row}",
+    "annual_amount_cell": "MR{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "TOURISM",
+    "source_header": "MT4",
+    "start_column_number": 358,
+    "quantity_cells": [
+      "MT{row}",
+      "MV{row}",
+      "MX{row}",
+      "MZ{row}"
+    ],
+    "amount_cells": [
+      "MU{row}",
+      "MW{row}",
+      "MY{row}",
+      "NA{row}"
+    ],
+    "annual_quantity_cell": "NB{row}",
+    "annual_amount_cell": "NC{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "AGRICULTURE",
+    "source_header": "NE4",
+    "start_column_number": 369,
+    "quantity_cells": [
+      "NE{row}",
+      "NG{row}",
+      "NI{row}",
+      "NK{row}"
+    ],
+    "amount_cells": [
+      "NF{row}",
+      "NH{row}",
+      "NJ{row}",
+      "NL{row}"
+    ],
+    "annual_quantity_cell": "NM{row}",
+    "annual_amount_cell": "NN{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MABEU",
+    "source_header": "NP4",
+    "start_column_number": 380,
+    "quantity_cells": [
+      "NP{row}",
+      "NR{row}",
+      "NT{row}",
+      "NV{row}"
+    ],
+    "amount_cells": [
+      "NQ{row}",
+      "NS{row}",
+      "NU{row}",
+      "NW{row}"
+    ],
+    "annual_quantity_cell": "NX{row}",
+    "annual_amount_cell": "NY{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MENRO",
+    "source_header": "OA4",
+    "start_column_number": 391,
+    "quantity_cells": [
+      "OA{row}",
+      "OC{row}",
+      "OE{row}",
+      "OG{row}"
+    ],
+    "amount_cells": [
+      "OB{row}",
+      "OD{row}",
+      "OF{row}",
+      "OH{row}"
+    ],
+    "annual_quantity_cell": "OI{row}",
+    "annual_amount_cell": "OJ{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "ENGINEERING",
+    "source_header": "OL4",
+    "start_column_number": 402,
+    "quantity_cells": [
+      "OL{row}",
+      "ON{row}",
+      "OP{row}",
+      "OR{row}"
+    ],
+    "amount_cells": [
+      "OM{row}",
+      "OO{row}",
+      "OQ{row}",
+      "OS{row}"
+    ],
+    "annual_quantity_cell": "OT{row}",
+    "annual_amount_cell": "OU{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "MCEDO",
+    "source_header": "OW4",
+    "start_column_number": 413,
+    "quantity_cells": [
+      "OW{row}",
+      "OY{row}",
+      "PA{row}",
+      "PC{row}"
+    ],
+    "amount_cells": [
+      "OX{row}",
+      "OZ{row}",
+      "PB{row}",
+      "PD{row}"
+    ],
+    "annual_quantity_cell": "PE{row}",
+    "annual_amount_cell": "PF{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "PUBLIC MARKET",
+    "source_header": "PH4",
+    "start_column_number": 424,
+    "quantity_cells": [
+      "PH{row}",
+      "PJ{row}",
+      "PL{row}",
+      "PN{row}"
+    ],
+    "amount_cells": [
+      "PI{row}",
+      "PK{row}",
+      "PM{row}",
+      "PO{row}"
+    ],
+    "annual_quantity_cell": "PP{row}",
+    "annual_amount_cell": "PQ{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "SLAUGHTERHOUSE",
+    "source_header": "PS4",
+    "start_column_number": 435,
+    "quantity_cells": [
+      "PS{row}",
+      "PU{row}",
+      "PW{row}",
+      "PY{row}"
+    ],
+    "amount_cells": [
+      "PT{row}",
+      "PV{row}",
+      "PX{row}",
+      "PZ{row}"
+    ],
+    "annual_quantity_cell": "QA{row}",
+    "annual_amount_cell": "QB{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "20% MDF",
+    "source_header": "QD4",
+    "start_column_number": 446,
+    "quantity_cells": [
+      "QD{row}",
+      "QF{row}",
+      "QH{row}",
+      "QJ{row}"
+    ],
+    "amount_cells": [
+      "QE{row}",
+      "QG{row}",
+      "QI{row}",
+      "QK{row}"
+    ],
+    "annual_quantity_cell": "QL{row}",
+    "annual_amount_cell": "QM{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  },
+  {
+    "source_sheet": "Sheet1",
+    "label": "5% MDRRMF",
+    "source_header": "QO4",
+    "start_column_number": 457,
+    "quantity_cells": [
+      "QO{row}",
+      "QQ{row}",
+      "QS{row}",
+      "QU{row}"
+    ],
+    "amount_cells": [
+      "QP{row}",
+      "QR{row}",
+      "QT{row}",
+      "QV{row}"
+    ],
+    "annual_quantity_cell": "QW{row}",
+    "annual_amount_cell": "QX{row}",
+    "owner_department": null,
+    "classification": "UNCONFIRMED",
+    "mapping_status": "NEEDS_AGENCY_CONFIRMATION"
+  }
+]

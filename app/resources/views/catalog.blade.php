@@ -1,0 +1,9 @@
+@extends('layout')
+@section('title','Item catalog · PPMP')
+@section('content')
+<div class="heading"><div><div class="eyebrow">SHARED REFERENCE</div><h1>Item catalog</h1><p class="muted">Workbook item descriptions, units and reference prices for this pilot.</p></div><span class="badge">{{ number_format($items->total()) }} results</span></div>
+<form class="filters" method="get"><div class="grow"><label for="q">Search items</label><input id="q" name="q" value="{{ request('q') }}" maxlength="120" placeholder="Search by item name or specification"></div><div><label for="category">Expenditure category</label><select id="category" name="category"><option value="">All categories</option>@foreach($categories as $category)<option @selected(request('category')===$category)>{{ $category }}</option>@endforeach</select></div><button class="button">Search</button><a class="button secondary" href="{{ route('catalog') }}">Clear</a></form>
+<section class="panel table-wrap"><table><thead><tr><th>Item / specification</th><th>Unit</th><th class="right">Unit cost</th><th>Catalog status</th></tr></thead><tbody>@forelse($items as $item)<tr><td><strong>{{ $item->description }}</strong><small>{{ $item->category }} · {{ $item->source_key }}</small></td><td>{{ $item->unit ?: '—' }}</td><td class="right nowrap">{{ $item->unit_cost_cents === null ? '—' : '₱'.number_format($item->unit_cost_cents/100,2) }}</td><td>@if($item->available)<span class="badge">Test use</span>@else<span class="badge amber">Needs review</span><small>{{ $item->issue }}</small>@endif</td></tr>@empty<tr><td colspan="4" class="empty">No matching items. Try a shorter search.</td></tr>@endforelse</tbody></table></section>
+@include('pagination',['paginator'=>$items])
+<p class="footnote">Source rows are preserved separately, including repeated descriptions. Items with missing or invalid unit/price data cannot be added to a draft.</p>
+@endsection

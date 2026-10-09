@@ -1,0 +1,381 @@
+@startuml ppmp_database_relationships
+hide circle
+skinparam linetype ortho
+skinparam shadowing false
+skinparam entityBackgroundColor #F8FAFC
+title PPMP - Proposed Database Relationships (companion ERD)
+entity "departments" as departments {
+  * id : bigint <<PK>>
+  -- D1 --
+  code
+  name
+  active
+}
+entity "users" as users {
+  * id : bigint <<PK>>
+  -- D1 --
+  name
+  login_identifier
+  password_hash
+  active
+}
+entity "memberships" as memberships {
+  * id : bigint <<PK>>
+  -- D1 --
+  * user_id : bigint <<FK>>
+  * department_id : bigint <<FK>>
+  active
+  effective_from
+  effective_to
+}
+entity "roles" as roles {
+  * id : bigint <<PK>>
+  -- D1 --
+  name
+}
+entity "permissions" as permissions {
+  * id : bigint <<PK>>
+  -- D1 --
+  name
+}
+entity "role_permissions" as role_permissions {
+  * id : bigint <<PK>>
+  -- D1 --
+  * role_id : bigint <<FK>>
+  * permission_id : bigint <<FK>>
+}
+entity "role_assignments" as role_assignments {
+  * id : bigint <<PK>>
+  -- D1 --
+  * user_id : bigint <<FK>>
+  * role_id : bigint <<FK>>
+    department_id : bigint <<FK>>
+  scope_type: department or global
+}
+entity "sessions" as sessions {
+  * id : bigint <<PK>>
+  -- D1 --
+  * user_id : bigint <<FK>>
+  expires_at
+  last_activity_at
+}
+entity "fiscal_years" as fiscal_years {
+  * id : bigint <<PK>>
+  -- D2 --
+  year
+  state
+}
+entity "planning_groups" as planning_groups {
+  * id : bigint <<PK>>
+  -- D2 --
+  code
+  name
+  kind: office or program or fund
+}
+entity "group_owners" as group_owners {
+  * id : bigint <<PK>>
+  -- D2 --
+  * planning_group_id : bigint <<FK>>
+  * fiscal_year_id : bigint <<FK>>
+  * owner_department_id : bigint <<FK>>
+}
+entity "expense_objects" as expense_objects {
+  * id : bigint <<PK>>
+  -- D2 --
+  code
+  name
+}
+entity "units" as units {
+  * id : bigint <<PK>>
+  -- D2 --
+  code
+  name
+}
+entity "catalog_items" as catalog_items {
+  * id : bigint <<PK>>
+  -- D2 --
+  * unit_id : bigint <<FK>>
+  * expense_object_id : bigint <<FK>>
+  code
+  description
+  specifications
+  active
+}
+entity "annual_prices" as annual_prices {
+  * id : bigint <<PK>>
+  -- D2 --
+  * item_id : bigint <<FK>>
+  * fiscal_year_id : bigint <<FK>>
+  price_version
+  unit_cost_decimal
+  effective_at
+  active
+}
+entity "funds" as funds {
+  * id : bigint <<PK>>
+  -- D2 --
+  code
+  name
+}
+entity "procurement_methods" as procurement_methods {
+  * id : bigint <<PK>>
+  -- D2 --
+  code
+  name
+  active
+}
+entity "allocations" as allocations {
+  * id : bigint <<PK>>
+  -- D2 --
+  * group_owner_id : bigint <<FK>>
+  * fund_id : bigint <<FK>>
+  allocated_amount_decimal
+}
+entity "workflow_templates" as workflow_templates {
+  * id : bigint <<PK>>
+  -- D2 --
+  name
+  template_version
+  stage_rules_json
+  active
+}
+entity "planning_cycles" as planning_cycles {
+  * id : bigint <<PK>>
+  -- D2 --
+  * fiscal_year_id : bigint <<FK>>
+  * workflow_template_id : bigint <<FK>>
+  opens_at
+  closes_at
+  active
+}
+entity "plans" as plans {
+  * id : bigint <<PK>>
+  -- D3 --
+  * group_owner_id : bigint <<FK>>
+    effective_approved_version_id : bigint <<FK>>
+  reference_number
+}
+entity "plan_versions" as plan_versions {
+  * id : bigint <<PK>>
+  -- D3 --
+  * plan_id : bigint <<FK>>
+    base_version_id : bigint <<FK>>
+  * created_by : bigint <<FK>>
+    submitted_by : bigint <<FK>>
+  * planning_cycle_id : bigint <<FK>>
+  revision_no
+  state
+  lock_version
+  submitted_at
+  approved_at
+  content_hash
+}
+entity "version_items" as version_items {
+  * id : bigint <<PK>>
+  -- D3 --
+  * version_id : bigint <<FK>>
+  * item_id : bigint <<FK>>
+  * annual_price_id : bigint <<FK>>
+    fund_id : bigint <<FK>>
+    procurement_method_id : bigint <<FK>>
+  line_no
+  description_snapshot
+  specifications_snapshot
+  unit_snapshot
+  expense_snapshot
+  unit_cost_decimal
+  remarks
+}
+entity "item_quarters" as item_quarters {
+  * id : bigint <<PK>>
+  -- D3 --
+  * version_item_id : bigint <<FK>>
+  quarter_number
+  quantity_decimal
+  amount_decimal
+}
+entity "attachments" as attachments {
+  * id : bigint <<PK>>
+  -- D4 --
+  * version_id : bigint <<FK>>
+  * uploaded_by : bigint <<FK>>
+  storage_key
+  filename
+  mime_type
+  byte_size
+  checksum
+  uploaded_at
+}
+entity "review_instances" as review_instances {
+  * id : bigint <<PK>>
+  -- D5 --
+  * version_id : bigint <<FK>>
+  * workflow_template_id : bigint <<FK>>
+  state
+  started_at
+  completed_at
+}
+entity "review_stages" as review_stages {
+  * id : bigint <<PK>>
+  -- D5 --
+  * review_instance_id : bigint <<FK>>
+  * assigned_user_id : bigint <<FK>>
+  stage_order
+  stage_type
+  state
+  lock_version
+}
+entity "review_actions" as review_actions {
+  * id : bigint <<PK>>
+  -- D5 --
+  * review_stage_id : bigint <<FK>>
+  * actor_id : bigint <<FK>>
+    version_item_id : bigint <<FK>>
+  decision
+  comment
+  actor_scope_snapshot
+  acted_at
+}
+entity "report_runs" as report_runs {
+  * id : bigint <<PK>>
+  -- D6 --
+  * fiscal_year_id : bigint <<FK>>
+  * created_by : bigint <<FK>>
+  report_type
+  filters_json
+  grouping_json
+  as_of_at
+  coverage_json
+  created_at
+}
+entity "report_sources" as report_sources {
+  * id : bigint <<PK>>
+  -- D6 --
+  * report_run_id : bigint <<FK>>
+  * version_id : bigint <<FK>>
+}
+entity "report_lines" as report_lines {
+  * id : bigint <<PK>>
+  -- D6 --
+  * report_run_id : bigint <<FK>>
+  grouping_key
+  quarter_number
+  quantity_decimal
+  amount_decimal
+}
+entity "report_line_sources" as report_line_sources {
+  * id : bigint <<PK>>
+  -- D6 --
+  * report_line_id : bigint <<FK>>
+  * report_source_id : bigint <<FK>>
+  * item_quarter_id : bigint <<FK>>
+  quantity_contribution_decimal
+  amount_contribution_decimal
+}
+entity "exports" as exports {
+  * id : bigint <<PK>>
+  -- D6 --
+  * report_run_id : bigint <<FK>>
+  * requested_by : bigint <<FK>>
+  format
+  state
+  storage_key
+  checksum
+  created_at
+}
+entity "audit_logs" as audit_logs {
+  * id : bigint <<PK>>
+  -- D7 --
+    actor_id : bigint <<FK>>
+    department_id : bigint <<FK>>
+  event_uuid
+  actor_snapshot
+  resource_type
+  resource_id
+  action
+  redacted_changes_json
+  outcome
+  occurred_at
+  correlation_id
+}
+entity "outbox_events" as outbox_events {
+  * id : bigint <<PK>>
+  -- D8 --
+  event_uuid
+  event_type
+  redacted_payload_json
+  state
+  attempts
+  occurred_at
+}
+entity "notifications" as notifications {
+  * id : bigint <<PK>>
+  -- D8 --
+  * recipient_user_id : bigint <<FK>>
+  * outbox_event_id : bigint <<FK>>
+  safe_payload_json
+  read_at
+  created_at
+}
+users ||--o{ memberships : user_id
+departments ||--o{ memberships : department_id
+roles ||--o{ role_permissions : role_id
+permissions ||--o{ role_permissions : permission_id
+users ||--o{ role_assignments : user_id
+roles ||--o{ role_assignments : role_id
+departments |o--o{ role_assignments : department_id
+users ||--o{ sessions : user_id
+planning_groups ||--o{ group_owners : planning_group_id
+fiscal_years ||--o{ group_owners : fiscal_year_id
+departments ||--o{ group_owners : owner_department_id
+units ||--o{ catalog_items : unit_id
+expense_objects ||--o{ catalog_items : expense_object_id
+catalog_items ||--o{ annual_prices : item_id
+fiscal_years ||--o{ annual_prices : fiscal_year_id
+group_owners ||--o{ allocations : group_owner_id
+funds ||--o{ allocations : fund_id
+fiscal_years ||--o{ planning_cycles : fiscal_year_id
+workflow_templates ||--o{ planning_cycles : workflow_template_id
+group_owners ||--o| plans : group_owner_id
+plan_versions |o--o| plans : effective_approved_version_id
+plans ||--o{ plan_versions : plan_id
+plan_versions |o--o{ plan_versions : base_version_id
+users ||--o{ plan_versions : created_by
+users |o--o{ plan_versions : submitted_by
+planning_cycles ||--o{ plan_versions : planning_cycle_id
+plan_versions ||--o{ version_items : version_id
+catalog_items ||--o{ version_items : item_id
+annual_prices ||--o{ version_items : annual_price_id
+funds |o--o{ version_items : fund_id
+procurement_methods |o--o{ version_items : procurement_method_id
+version_items ||--o{ item_quarters : version_item_id
+plan_versions ||--o{ attachments : version_id
+users ||--o{ attachments : uploaded_by
+plan_versions ||--o| review_instances : version_id
+workflow_templates ||--o{ review_instances : workflow_template_id
+review_instances ||--o{ review_stages : review_instance_id
+users ||--o{ review_stages : assigned_user_id
+review_stages ||--o{ review_actions : review_stage_id
+users ||--o{ review_actions : actor_id
+version_items |o--o{ review_actions : version_item_id
+fiscal_years ||--o{ report_runs : fiscal_year_id
+users ||--o{ report_runs : created_by
+report_runs ||--o{ report_sources : report_run_id
+plan_versions ||--o{ report_sources : version_id
+report_runs ||--o{ report_lines : report_run_id
+report_lines ||--o{ report_line_sources : report_line_id
+report_sources ||--o{ report_line_sources : report_source_id
+item_quarters ||--o{ report_line_sources : item_quarter_id
+report_runs ||--o{ exports : report_run_id
+users ||--o{ exports : requested_by
+users |o--o{ audit_logs : actor_id
+departments |o--o{ audit_logs : department_id
+users ||--o{ notifications : recipient_user_id
+outbox_events ||--o{ notifications : outbox_event_id
+note as Rules
+Required FK: exactly one parent; nullable FK: zero or one parent.
+Children default to zero or many unless the FK is unique.
+Additional composite uniqueness and cross-table rules: DATA_DICTIONARY.md
+Historical rows use RESTRICT/deactivation, not cascading deletion.
+end note
+@enduml

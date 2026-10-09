@@ -1,0 +1,62 @@
+@startuml 04_level2_p3
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam ArrowFontSize 10
+skinparam linetype polyline
+skinparam nodesep 35
+skinparam ranksep 55
+skinparam rectangleBackgroundColor #F1F5F9
+skinparam usecaseBackgroundColor #DBEAFE
+skinparam databaseBackgroundColor #FEF3C7
+
+title PPMP - Level 2 decomposition of 3.0
+rectangle "Department Preparer" as E
+usecase "4.0\nReview and Decide on Submitted Versions" as P4
+usecase "6.0\nRecord Audit Events and Notifications" as P6
+database "D1 Identity and Access\nusers, departments, memberships, roles,\npermissions, role assignments, sessions" as D1
+database "D2 Planning Reference Data\nfiscal years, planning groups, owner mappings,\nitems, units, expense objects, annual prices,\nfunds, methods, allocations, workflow templates" as D2
+database "D3 PPMP Plans and Versions\nplan identities, version headers,\nversion items, quarterly quantities, snapshots" as D3
+database "D4 Private Attachments\nversion-linked metadata and file objects" as D4
+database "D5 Review Records\nreview instances, assigned stages,\nappend-only decisions and comments" as D5
+usecase "3.1\nLoad Authorized Draft and Reference Data" as P31
+usecase "3.2\nValidate Items and Calculate Quarter Totals" as P32
+usecase "3.3\nValidate and Store Private Attachments" as P33
+usecase "3.4\nSave Draft or Create Revision" as P34
+usecase "3.5\nFreeze and Submit Version" as P35
+usecase "3.6\nBuild Process Audit Event" as P36
+
+E --> P31 : F012 Draft, revision and submission request\n[DRAFT_REQUEST]
+E --> P33 : F013 Attachment upload / retrieval / unlink\n[FILE_REQUEST]
+P31 --> E : F014 Draft detail, totals and validation result\n[DRAFT_RESULT]
+D1 --> P31 : F015 User and department permissions\n[ACCESS_RECORDS]
+D2 --> P31 : F016 Owned groups, catalog, prices and rules\n[REFERENCE]
+D3 --> P31 : F017 Existing plan and version content\n[PLAN_READ]
+P34 --> D3 : F018 Draft content or immutable submitted version\n[DRAFT_WRITE]
+D4 --> P33 : F019 Version attachment records and bytes\n[ATTACH_READ]
+P33 --> D4 : F020 Validated draft attachments\n[ATTACH_WRITE]
+D5 --> P31 : F021 Return comments and review status\n[REVIEW_READ]
+P35 --> P4 : F022 Submitted version reference\n[SUBMISSION]
+P36 --> P6 : F062 Process 3.0 audit / notification event\n[DOMAIN_EVENT]
+P31 --> P32 : 3.01 Authorized draft context\n[DRAFT_CONTEXT]
+P32 --> P34 : 3.02 Validated quarterly values and totals\n[CALCULATED_DRAFT]
+P32 --> P31 : 3.03 Field validation errors\n[DRAFT_RESULT]
+P31 --> P33 : 3.04 Authorized attachment context\n[DRAFT_CONTEXT]
+P33 --> P34 : 3.05 Validated attachment manifest\n[ATTACHMENT_MANIFEST]
+P33 --> P31 : 3.06 Attachment result or authorized bytes\n[DRAFT_RESULT]
+P34 --> P31 : 3.07 Saved draft or validation result\n[DRAFT_RESULT]
+P34 --> P35 : 3.08 Saved version and submission intent\n[SAVED_DRAFT]
+P35 --> P34 : 3.09 Frozen submission snapshot to persist\n[SUBMISSION]
+P35 --> P31 : 3.10 Submission receipt or validation errors\n[DRAFT_RESULT]
+P34 --> P36 : 3.11 Draft/revision change event\n[DOMAIN_EVENT]
+P33 --> P36 : 3.12 Attachment access/change event\n[DOMAIN_EVENT]
+P35 --> P36 : 3.13 Submission event\n[DOMAIN_EVENT]
+legend bottom
+Rectangle = external role; oval = data-transforming process
+Cylinder = logical data store; arrow = named data payload
+U groups all roles for shared login, reports and inbox functions.
+Numbered process peers in Level 2 are outside the decomposed process.
+Packet fields: FLOW_REGISTER.md; relationships: DATA_DICTIONARY.md
+endlegend
+@enduml

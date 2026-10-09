@@ -1,0 +1,58 @@
+@startuml 07_level2_p6
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam ArrowFontSize 10
+skinparam linetype polyline
+skinparam nodesep 35
+skinparam ranksep 55
+skinparam rectangleBackgroundColor #F1F5F9
+skinparam usecaseBackgroundColor #DBEAFE
+skinparam databaseBackgroundColor #FEF3C7
+
+title PPMP - Level 2 decomposition of 6.0
+rectangle "All authenticated roles / login user" as U
+rectangle "Auditor / Viewer" as V
+usecase "1.0\nAuthenticate and Manage Access" as P1
+usecase "2.0\nMaintain Planning Reference Data" as P2
+usecase "3.0\nPrepare and Submit Department PPMP" as P3
+usecase "4.0\nReview and Decide on Submitted Versions" as P4
+usecase "5.0\nConsolidate and Produce Reports" as P5
+database "D1 Identity and Access\nusers, departments, memberships, roles,\npermissions, role assignments, sessions" as D1
+database "D7 Append-only Audit Log" as D7
+database "D8 Event Outbox and Notifications" as D8
+usecase "6.1\nPersist and Consume Committed Events" as P61
+usecase "6.2\nRedact and Append Audit Entries" as P62
+usecase "6.3\nResolve Recipients and Maintain Inbox" as P63
+usecase "6.4\nAuthorize and Serve Audit History" as P64
+
+U --> P63 : F051 Notification query / read acknowledgement\n[INBOX_QUERY]
+P63 --> U : F052 Recipient notifications and unread count\n[INBOX_RESULT]
+V --> P64 : F053 Authorized audit-history query\n[AUDIT_QUERY]
+P64 --> V : F054 Filtered audit history\n[AUDIT_RESULT]
+D1 --> P63 : F055 Recipient membership and audit permissions\n[ACCESS_RECORDS]
+D7 --> P64 : F056 Scoped audit entries\n[AUDIT_READ]
+P62 --> D7 : F057 Redacted append-only audit entries\n[AUDIT_WRITE]
+D8 --> P61 : F058 Committed events and recipient inbox records\n[OUTBOX_READ]
+P61 --> D8 : F059 Committed events, inbox messages and read state\n[OUTBOX_WRITE]
+P1 --> P61 : F060 Process 1.0 audit / notification event\n[DOMAIN_EVENT]
+P2 --> P61 : F061 Process 2.0 audit / notification event\n[DOMAIN_EVENT]
+P3 --> P61 : F062 Process 3.0 audit / notification event\n[DOMAIN_EVENT]
+P4 --> P61 : F063 Process 4.0 audit / notification event\n[DOMAIN_EVENT]
+P5 --> P61 : F064 Process 5.0 audit / notification event\n[DOMAIN_EVENT]
+P61 --> P62 : 6.01 Committed event for audit\n[COMMITTED_EVENT]
+P61 --> P63 : 6.02 Committed event for recipient resolution\n[COMMITTED_EVENT]
+P63 --> P61 : 6.03 Inbox query and acknowledgement\n[INBOX_QUERY]
+P61 --> P63 : 6.04 Recipient-owned stored messages\n[INBOX_RESULT]
+P63 --> P61 : 6.05 New messages and read-state updates\n[OUTBOX_WRITE]
+P63 --> P64 : 6.06 Verified audit-reader authority\n[ACCESS_RECORDS]
+P64 --> P62 : 6.07 Audit-read trace\n[AUDIT_QUERY_EVENT]
+legend bottom
+Rectangle = external role; oval = data-transforming process
+Cylinder = logical data store; arrow = named data payload
+U groups all roles for shared login, reports and inbox functions.
+Numbered process peers in Level 2 are outside the decomposed process.
+Packet fields: FLOW_REGISTER.md; relationships: DATA_DICTIONARY.md
+endlegend
+@enduml

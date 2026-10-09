@@ -1,0 +1,60 @@
+@startuml 00_context
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam ArrowFontSize 10
+skinparam linetype polyline
+skinparam nodesep 35
+skinparam ranksep 55
+skinparam rectangleBackgroundColor #F1F5F9
+skinparam usecaseBackgroundColor #DBEAFE
+skinparam databaseBackgroundColor #FEF3C7
+
+title PPMP Management System - Context DFD
+rectangle "All authenticated roles / login user" as U
+rectangle "System Administrator" as A
+rectangle "Department Preparer" as E
+rectangle "Department Head" as H
+rectangle "Budget Reviewer" as B
+rectangle "Procurement Reviewer" as R
+rectangle "Authorized Approver" as F
+rectangle "Auditor / Viewer" as V
+usecase "0\nGovernment PPMP Management System" as P0
+
+U --> P0 : F001 Login / logout / session request\n[AUTH]
+P0 --> U : F002 Authentication result\n[AUTH_RESULT]
+A --> P0 : F003 Account and department access changes\n[ACCOUNT_CHANGE]
+P0 --> A : F004 Account administration result\n[ACCESS_RESULT]
+A --> P0 : F007 Catalog, planning and workflow changes\n[SETUP_CHANGE]
+P0 --> A : F008 Reference-data result\n[SETUP_RESULT]
+E --> P0 : F012 Draft, revision and submission request\n[DRAFT_REQUEST]
+E --> P0 : F013 Attachment upload / retrieval / unlink\n[FILE_REQUEST]
+P0 --> E : F014 Draft detail, totals and validation result\n[DRAFT_RESULT]
+H --> P0 : F023 Review queue / version / attachment request\n[REVIEW_QUERY]
+H --> P0 : F024 Endorsement or return with comments\n[HEAD_DECISION]
+P0 --> H : F025 Head review packet and action result\n[REVIEW_PACKET]
+B --> P0 : F026 Review queue / version / attachment request\n[REVIEW_QUERY]
+B --> P0 : F027 Budget findings and decision\n[BUDGET_DECISION]
+P0 --> B : F028 Budget review packet and action result\n[REVIEW_PACKET]
+R --> P0 : F029 Review queue / version / attachment request\n[REVIEW_QUERY]
+R --> P0 : F030 Procurement findings and decision\n[PROC_DECISION]
+P0 --> R : F031 Procurement review packet and action result\n[REVIEW_PACKET]
+F --> P0 : F032 Review queue / version / attachment request\n[REVIEW_QUERY]
+F --> P0 : F033 Approval, return or rejection\n[FINAL_DECISION]
+P0 --> F : F034 Approval packet and action result\n[REVIEW_PACKET]
+U --> P0 : F042 Scoped dashboard / report / export request\n[REPORT_QUERY]
+R --> P0 : F043 Approved-version consolidation request\n[CONSOLIDATE_REQUEST]
+P0 --> U : F044 Scoped report, totals or export result\n[REPORT_RESULT]
+U --> P0 : F051 Notification query / read acknowledgement\n[INBOX_QUERY]
+P0 --> U : F052 Recipient notifications and unread count\n[INBOX_RESULT]
+V --> P0 : F053 Authorized audit-history query\n[AUDIT_QUERY]
+P0 --> V : F054 Filtered audit history\n[AUDIT_RESULT]
+legend bottom
+Rectangle = external role; oval = data-transforming process
+Cylinder = logical data store; arrow = named data payload
+U groups all roles for shared login, reports and inbox functions.
+Numbered process peers in Level 2 are outside the decomposed process.
+Packet fields: FLOW_REGISTER.md; relationships: DATA_DICTIONARY.md
+endlegend
+@enduml

@@ -1,0 +1,38 @@
+@startuml 03_level2_p2
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam ArrowFontSize 10
+skinparam linetype polyline
+skinparam nodesep 35
+skinparam ranksep 55
+skinparam rectangleBackgroundColor #F1F5F9
+skinparam usecaseBackgroundColor #DBEAFE
+skinparam databaseBackgroundColor #FEF3C7
+
+title PPMP - Level 2 decomposition of 2.0
+rectangle "System Administrator" as A
+usecase "6.0\nRecord Audit Events and Notifications" as P6
+database "D1 Identity and Access\nusers, departments, memberships, roles,\npermissions, role assignments, sessions" as D1
+database "D2 Planning Reference Data\nfiscal years, planning groups, owner mappings,\nitems, units, expense objects, annual prices,\nfunds, methods, allocations, workflow templates" as D2
+usecase "2.1\nAuthorize Reference Change" as P21
+usecase "2.2\nValidate Mappings, Prices and Workflow" as P22
+usecase "2.3\nPersist Versioned Reference Data" as P23
+
+A --> P21 : F007 Catalog, planning and workflow changes\n[SETUP_CHANGE]
+P23 --> A : F008 Reference-data result\n[SETUP_RESULT]
+D1 --> P21 : F009 Administrator permission scope\n[ACCESS_RECORDS]
+D2 --> P22 : F010 Existing reference records\n[REFERENCE]
+P23 --> D2 : F011 Validated reference records\n[REFERENCE_WRITE]
+P23 --> P6 : F061 Process 2.0 audit / notification event\n[DOMAIN_EVENT]
+P21 --> P22 : 2.01 Authorized reference-data proposal\n[VALID_SETUP]
+P22 --> P23 : 2.02 Validated reference changes\n[VALID_REFERENCE]
+legend bottom
+Rectangle = external role; oval = data-transforming process
+Cylinder = logical data store; arrow = named data payload
+U groups all roles for shared login, reports and inbox functions.
+Numbered process peers in Level 2 are outside the decomposed process.
+Packet fields: FLOW_REGISTER.md; relationships: DATA_DICTIONARY.md
+endlegend
+@enduml

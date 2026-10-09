@@ -1,0 +1,65 @@
+@startuml 05_level2_p4
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam ArrowFontSize 10
+skinparam linetype polyline
+skinparam nodesep 35
+skinparam ranksep 55
+skinparam rectangleBackgroundColor #F1F5F9
+skinparam usecaseBackgroundColor #DBEAFE
+skinparam databaseBackgroundColor #FEF3C7
+
+title PPMP - Level 2 decomposition of 4.0
+rectangle "Department Head" as H
+rectangle "Budget Reviewer" as B
+rectangle "Procurement Reviewer" as R
+rectangle "Authorized Approver" as F
+usecase "3.0\nPrepare and Submit Department PPMP" as P3
+usecase "6.0\nRecord Audit Events and Notifications" as P6
+database "D1 Identity and Access\nusers, departments, memberships, roles,\npermissions, role assignments, sessions" as D1
+database "D2 Planning Reference Data\nfiscal years, planning groups, owner mappings,\nitems, units, expense objects, annual prices,\nfunds, methods, allocations, workflow templates" as D2
+database "D3 PPMP Plans and Versions\nplan identities, version headers,\nversion items, quarterly quantities, snapshots" as D3
+database "D4 Private Attachments\nversion-linked metadata and file objects" as D4
+database "D5 Review Records\nreview instances, assigned stages,\nappend-only decisions and comments" as D5
+usecase "4.1\nCreate Review Instance and Load Packet" as P41
+usecase "4.2\nValidate Reviewer, Stage and Decision" as P42
+usecase "4.3\nRecord Decision and Update Version State" as P43
+
+P3 --> P41 : F022 Submitted version reference\n[SUBMISSION]
+H --> P41 : F023 Review queue / version / attachment request\n[REVIEW_QUERY]
+H --> P42 : F024 Endorsement or return with comments\n[HEAD_DECISION]
+P41 --> H : F025 Head review packet and action result\n[REVIEW_PACKET]
+B --> P41 : F026 Review queue / version / attachment request\n[REVIEW_QUERY]
+B --> P42 : F027 Budget findings and decision\n[BUDGET_DECISION]
+P41 --> B : F028 Budget review packet and action result\n[REVIEW_PACKET]
+R --> P41 : F029 Review queue / version / attachment request\n[REVIEW_QUERY]
+R --> P42 : F030 Procurement findings and decision\n[PROC_DECISION]
+P41 --> R : F031 Procurement review packet and action result\n[REVIEW_PACKET]
+F --> P41 : F032 Review queue / version / attachment request\n[REVIEW_QUERY]
+F --> P42 : F033 Approval, return or rejection\n[FINAL_DECISION]
+P41 --> F : F034 Approval packet and action result\n[REVIEW_PACKET]
+D1 --> P42 : F035 Current reviewer authority and scope\n[ACCESS_RECORDS]
+D2 --> P41 : F036 Workflow templates and budget context\n[REFERENCE]
+D3 --> P41 : F037 Submitted content and effective version\n[PLAN_READ]
+D4 --> P41 : F038 Submitted attachment records and bytes\n[ATTACH_READ]
+D5 --> P41 : F039 Existing stages, comments and decisions\n[REVIEW_READ]
+P43 --> D5 : F040 Review assignments, decisions and comments\n[REVIEW_WRITE]
+P43 --> D3 : F041 Version state and effective approved version\n[PLAN_STATE_WRITE]
+P43 --> P6 : F063 Process 4.0 audit / notification event\n[DOMAIN_EVENT]
+P41 --> P42 : 4.01 Version, workflow and authority context\n[REVIEW_CONTEXT]
+P42 --> P43 : 4.02 Validated decision\n[VALID_DECISION]
+P43 --> P41 : 4.03 Updated stage and decision receipt\n[REVIEW_PACKET]
+P41 --> P43 : 4.04 Initial review instance and stage assignment\n[REVIEW_WRITE]
+P42 --> P41 : 4.05 Decision validation result\n[REVIEW_PACKET]
+P41 --> P42 : 4.06 Packet access request\n[REVIEW_QUERY]
+P42 --> P41 : 4.07 Authorized reviewer scope or denial\n[REVIEW_ACCESS]
+legend bottom
+Rectangle = external role; oval = data-transforming process
+Cylinder = logical data store; arrow = named data payload
+U groups all roles for shared login, reports and inbox functions.
+Numbered process peers in Level 2 are outside the decomposed process.
+Packet fields: FLOW_REGISTER.md; relationships: DATA_DICTIONARY.md
+endlegend
+@enduml

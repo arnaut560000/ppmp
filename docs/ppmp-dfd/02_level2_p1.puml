@@ -1,0 +1,41 @@
+@startuml 02_level2_p1
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam ArrowFontSize 10
+skinparam linetype polyline
+skinparam nodesep 35
+skinparam ranksep 55
+skinparam rectangleBackgroundColor #F1F5F9
+skinparam usecaseBackgroundColor #DBEAFE
+skinparam databaseBackgroundColor #FEF3C7
+
+title PPMP - Level 2 decomposition of 1.0
+rectangle "All authenticated roles / login user" as U
+rectangle "System Administrator" as A
+usecase "6.0\nRecord Audit Events and Notifications" as P6
+database "D1 Identity and Access\nusers, departments, memberships, roles,\npermissions, role assignments, sessions" as D1
+usecase "1.1\nAuthenticate Session" as P11
+usecase "1.2\nValidate Account and Role Changes" as P12
+usecase "1.3\nPersist Access and Return Result" as P13
+
+U --> P11 : F001 Login / logout / session request\n[AUTH]
+P11 --> U : F002 Authentication result\n[AUTH_RESULT]
+A --> P12 : F003 Account and department access changes\n[ACCOUNT_CHANGE]
+P13 --> A : F004 Account administration result\n[ACCESS_RESULT]
+D1 --> P11 : F005 Identity, access and session records\n[ACCESS_RECORDS]
+P13 --> D1 : F006 Validated accounts, access and sessions\n[ACCESS_WRITE]
+P13 --> P6 : F060 Process 1.0 audit / notification event\n[DOMAIN_EVENT]
+P11 --> P12 : 1.01 Authenticated administrator context\n[AUTH_RESULT]
+P11 --> P13 : 1.02 Validated session outcome\n[AUTH_RESULT]
+P12 --> P13 : 1.03 Authorized access mutation\n[VERIFIED_ACCESS_CHANGE]
+P13 --> P11 : 1.04 Persisted session result\n[AUTH_RESULT]
+legend bottom
+Rectangle = external role; oval = data-transforming process
+Cylinder = logical data store; arrow = named data payload
+U groups all roles for shared login, reports and inbox functions.
+Numbered process peers in Level 2 are outside the decomposed process.
+Packet fields: FLOW_REGISTER.md; relationships: DATA_DICTIONARY.md
+endlegend
+@enduml

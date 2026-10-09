@@ -1,0 +1,46 @@
+@startuml 06_level2_p5
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam ArrowFontSize 10
+skinparam linetype polyline
+skinparam nodesep 35
+skinparam ranksep 55
+skinparam rectangleBackgroundColor #F1F5F9
+skinparam usecaseBackgroundColor #DBEAFE
+skinparam databaseBackgroundColor #FEF3C7
+
+title PPMP - Level 2 decomposition of 5.0
+rectangle "All authenticated roles / login user" as U
+rectangle "Procurement Reviewer" as R
+usecase "6.0\nRecord Audit Events and Notifications" as P6
+database "D1 Identity and Access\nusers, departments, memberships, roles,\npermissions, role assignments, sessions" as D1
+database "D2 Planning Reference Data\nfiscal years, planning groups, owner mappings,\nitems, units, expense objects, annual prices,\nfunds, methods, allocations, workflow templates" as D2
+database "D3 PPMP Plans and Versions\nplan identities, version headers,\nversion items, quarterly quantities, snapshots" as D3
+database "D5 Review Records\nreview instances, assigned stages,\nappend-only decisions and comments" as D5
+database "D6 Consolidations and Exports\nreport runs, selected versions, source-line links,\nexport metadata and private output files" as D6
+usecase "5.1\nAuthorize Report and Select Versions" as P51
+usecase "5.2\nAggregate Quarters and Preserve Lineage" as P52
+usecase "5.3\nPersist Report and Generate Export" as P53
+
+U --> P51 : F042 Scoped dashboard / report / export request\n[REPORT_QUERY]
+R --> P51 : F043 Approved-version consolidation request\n[CONSOLIDATE_REQUEST]
+P53 --> U : F044 Scoped report, totals or export result\n[REPORT_RESULT]
+D1 --> P51 : F045 Report permissions and department scope\n[ACCESS_RECORDS]
+D2 --> P51 : F046 Group mappings and report reference data\n[REFERENCE]
+D3 --> P51 : F047 Selected versions and quarterly item data\n[PLAN_READ]
+D5 --> P51 : F048 Approval evidence and status history\n[REVIEW_READ]
+D6 --> P53 : F049 Existing report lineage and output files\n[REPORT_READ]
+P53 --> D6 : F050 Report snapshot, lineage and export files\n[REPORT_WRITE]
+P53 --> P6 : F064 Process 5.0 audit / notification event\n[DOMAIN_EVENT]
+P51 --> P52 : 5.01 Selected version-item-quarter records\n[REPORT_SOURCE]
+P52 --> P53 : 5.02 Aggregates, source lineage and warnings\n[AGGREGATED_REPORT]
+legend bottom
+Rectangle = external role; oval = data-transforming process
+Cylinder = logical data store; arrow = named data payload
+U groups all roles for shared login, reports and inbox functions.
+Numbered process peers in Level 2 are outside the decomposed process.
+Packet fields: FLOW_REGISTER.md; relationships: DATA_DICTIONARY.md
+endlegend
+@enduml

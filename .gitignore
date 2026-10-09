@@ -1,0 +1,23 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+auth.json
+*.pem
+*.key
+
+# Installed dependencies and runtime data
+vendor/
+node_modules/
+*.sqlite
+*.sqlite-*
+*.log
+__pycache__/
+*.pyc
+.phpunit.result.cache
+.phpunit.cache/
+
+# Local packaging output
+/dist/
+.DS_Store
+Thumbs.db
